@@ -216,7 +216,14 @@
           "depot.epicardial",
           "depot.brown.supraclavicular"
         ],
-        "bone": []
+        "bone": [],
+        "chemistry": [
+          "body-map/regions/heart-metabolic-chemistry.md",
+          "body-map/regions/blood-vessels-chemistry.md"
+        ],
+        "cell_physics": [
+          "body-map/cell-physics/heart-cardiomyocyte.md"
+        ]
       },
       "library": [
         "library/vessels-heart/README.md",
@@ -624,6 +631,15 @@
         ],
         "bone": [
           "bone.femur.neck"
+        ],
+        "chemistry": [
+          "body-map/regions/gonads-male-chemistry.md",
+          "body-map/regions/gonads-female-chemistry.md"
+        ],
+        "cell_physics": [
+          "body-map/cell-physics/sex-sperm-flagellar.md",
+          "body-map/cell-physics/sex-oocyte-crowding.md",
+          "body-map/cell-physics/sex-steroidogenic-packing.md"
         ]
       },
       "library": [

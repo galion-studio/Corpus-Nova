@@ -50,3 +50,6 @@ Script: `figures/gut-energy/src/make_figures.py` (matplotlib, `transparent=True`
 | Receptors | Enteroendocrine receptors (CCK, GLP-1, 5-HT₃/5-HT₄, FFAR2/3 for SCFAs) |
 | Homo Origins | Deep-time diet evolution, archaeological dairying, hominin gut anatomy |
 | Whole Body | Organ-system overview; abdomen region meshes and IDs |
+
+---
+**License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.

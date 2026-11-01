@@ -13,10 +13,10 @@ Everything real-life known about the body, configured for browsing. Expand over 
 | Receptors | `library/receptors/` | seeded (OXTR, MOR, AVPR1A, …) | Receptors |
 | Vessels & heart | `library/vessels-heart/` | stub | Whole Body + body-map |
 | Hormones & sex chemistry | `library/hormones/` | **seeded** (overview, HPG, testosterone, E2/P4, steroidogenesis, levels, testicular production) | Sex biology + BioChem (pathways) + Receptors (links) |
-| Male reproductive system | `library/male-reproductive/` | **seeded** (testes, ducts, glands, Leydig steroidogenesis) | Whole Body + BioChem |
-| Female reproductive system | `library/female-reproductive/` | **seeded** (ovaries, uterus, tracts, cycle, ovarian steroidogenesis) | Whole Body + BioChem |
+| Male reproductive system | `library/male-reproductive/` | **seeded** (testes, ducts, glands, map-links with mesh IDs, Leydig steroidogenesis) | Whole Body + BioChem |
+| Female reproductive system | `library/female-reproductive/` | **seeded** (ovaries, uterus, tracts, cycle, map-links with mesh IDs, ovarian steroidogenesis) | Whole Body + BioChem |
 | Adipose / metabolism | `library/adipose-metabolism/` | seeded (incl. sex hormones & fat) | Adipose |
 | Bone metrics & anatomy | `library/bone-metrics/` (also `library/bone/` stub) | seeded by Bone Metrics | Bone Metrics |
 | Whole-body anatomy | `library/whole-body/` | **seeded** (nested systems, coordination trio, map glossary) | Whole Body |
 
-Cross-links: interactive map → `body-map/`; white papers → `white-papers/`.
+Cross-links: interactive map → `body-map/` (payloads `body-map/panels/whole-body-panels.json`, sex layers `body-map/overlays/sex-layers.json`); white papers → `white-papers/`.
