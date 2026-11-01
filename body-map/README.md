@@ -6,6 +6,13 @@ Hover a region → see organs, receptors (pointers), blood vessels, heart pumpin
 - Presentation: project Page / interactive surface (not paper figure GIFs alone)  
 - Natural overview owner: Whole Body theme; Receptors / Bone / Adipose supply depth via links  
 
+## Visual identity
+- Style guide: [`notes/branding/STYLE.md`](../notes/branding/STYLE.md) · details: [branding.md](branding.md) · assets: [`figures/branding/`](../figures/branding/) (`cn-mark.png`, `cn-lockup.png`, `cn-mark-pulse.gif`)
+- Active / hovered regions use **signal `#2F6F6A`** (soft fill `#DCEEEB`); everything else stays quiet.
+- Chrome is hairline only: `line #E5E2DC` rules, `mute #6B7280` labels — no gradients, shadows, or busy UI.
+- Palette: `paper #F7F5F2` background with `ink #0B0F14` text (dark mode inverts paper/ink; signal unchanged).
+- **License:** Corpus Nova payloads (overlays, hover copy, region data) are MIT — see `/LICENSE`. Third-party atlases/meshes (BodyParts3D, Z-Anatomy, etc.) keep their own licenses.
+
 Start at [regions/index.md](regions/index.md).
 
 ---

@@ -2,6 +2,8 @@
 
 **One-liner:** a cholesterol-built steroid that the testes pour out at about 7 mg a day — and that every woman also makes, in much smaller amounts.
 
+**Chemistry zoom:** [testosterone-levels.md](testosterone-levels.md) · [testicular-testosterone-production.md](testicular-testosterone-production.md) (paper 01 §7).
+
 Map: `pelvis.testis` (male_layer, primary) · `pelvis.ovary`, `abdomen.adrenal` (female_layer sources) · HPG control from `head-neck.hypothalamus` / `head-neck.pituitary`.
 
 ---

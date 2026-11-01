@@ -1,8 +1,16 @@
+![Corpus Nova](../figures/branding/cn-paper-header.png)
+
 # The Crowded Cell: Why Physics Feels Different Inside
 
-*Theme 2 — Cell Physics · Paper 01 (series opener)*
+*Cell Physics · Paper 01 (series opener)*
 
-**Abstract.** Picture a protein in a glass of water: it drifts, spins, and bumps into things now and then. Now drop it into a living cell, where a fifth to nearly a third of the space is already taken. The laws of physics don't change in there, but the numbers do. Molecules walk strange paths, the "liquid" acts partly like jelly, and a single random kick from heat is about as strong as the cell's own motors. This paper is a field guide to that crowded world.
+---
+**Corpus Nova** · Theme 2 · Universal readers · PhD-worthy depth · Voice: alien-technology minimal · **License:** MIT · 2026-11-01
+
+---
+## Abstract
+
+Picture a protein in a glass of water: it drifts, spins, and bumps into things now and then. Now drop it into a living cell, where a fifth to nearly a third of the space is already taken. The laws of physics don't change in there, but the numbers do. Molecules walk strange paths, the "liquid" acts partly like jelly, and a single random kick from heat is about as strong as the cell's own motors. This paper is a field guide to that crowded world.
 
 ---
 
@@ -157,3 +165,6 @@ This paper feeds the interactive body map and universal library (map-first pipel
 - `library/cell-physics/*.md`
 
 Map UI should reuse open-source anatomy stacks listed in `notes/github-anatomy-landscape.md` — do not invent a new 3D viewer.
+
+---
+**License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.

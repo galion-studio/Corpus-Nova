@@ -1,7 +1,13 @@
-# The Chemistry That Refuses to Finish
-### White paper 01 · Theme 1 — Real-life human biology and chemistry (in vivo)
+![Corpus Nova](../figures/branding/cn-paper-header.png)
 
-*Human Anatomy & Biology Science Project · Draft 2 (map-first + sex-steroid chemistry) · 2026-11-01*
+# The Chemistry That Refuses to Finish
+
+*White paper 01 · Real-life human biology and chemistry (in vivo) · Draft 2 (map-first + sex-steroid chemistry)*
+
+---
+**Corpus Nova** · Theme 1 · Universal readers · PhD-worthy depth · Voice: alien-technology minimal · **License:** MIT · 2026-11-01
+
+---
 *Readers: anyone learning the real body, from curious beginners to working scientists. Terms are explained the first time they show up.*
 
 ---
@@ -347,3 +353,6 @@ Full citations with DOIs are in [`../sources/biology-chemistry-paper1-sources.md
 - Boron W.F., Boulpaep E.L. (2017). *Medical Physiology*, 3rd ed. Elsevier.
 - Milo R., Phillips R. (2015). *Cell Biology by the Numbers*. Garland Science. (Free online: book.bionumbers.org)
 - Alberts B. et al. (2022). *Molecular Biology of the Cell*, 7th ed. W.W. Norton.
+
+---
+**License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.

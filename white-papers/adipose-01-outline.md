@@ -27,3 +27,6 @@ Do **not** reinvent 3D viewers (`notes/github-anatomy-landscape.md`).
 - `figures/adipose/adipose-meal-to-droplet.png`
 - `figures/adipose/adipose-white-vs-brown.png`
 - `figures/adipose/adipose-hypertrophy-vs-hyperplasia.png`
+
+---
+**License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.

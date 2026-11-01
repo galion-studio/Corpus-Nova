@@ -24,26 +24,26 @@ cards=[("AR","NR3C4 · gene on X","testosterone, DHT","nuclear",
         "◎ reproductive tract,\n   brain, vessels,\n   immune cells","Fast: Ca²⁺ + PIP₃\nin seconds"),
        ("PR","PGR · PR-A / PR-B","progesterone","nuclear",
         "♀ uterus (A), ovary (A),\n   breast (B), cervix\n◎ brain","Made on ERα's\norder: 'get ready'")]
-fig,ax=plt.subplots(figsize=(14,6.2)); ax.set_xlim(0,14); ax.set_ylim(0,6.2); ax.axis("off")
+fig,ax=plt.subplots(figsize=(14,5.5)); ax.set_xlim(0,14); ax.set_ylim(0.7,6.2); ax.set_aspect("equal"); ax.axis("off")
 ax.text(7,5.95,"Same locks, different keys — the sex-steroid receptor cast",ha="center",fontsize=16,weight="bold")
 for i,(n,code,lig,kind,where,why) in enumerate(cards):
     x=0.2+i*2.78; c=REC if kind=="nuclear" else GQ
-    box(ax,x,0.35,2.55,5.1,c)
+    box(ax,x,1.2,2.55,4.25,c)
     if kind=="nuclear": ax.add_patch(Circle((x+0.35,5.05),0.17,color=c))
     else: ax.add_patch(RegularPolygon((x+0.35,5.05),4,radius=0.22,color=c))
     ax.text(x+0.65,5.05,n,fontsize=18,weight="bold",va="center")
     ax.text(x+0.15,4.55,code,fontsize=9,color=SOFT)
-    ax.text(x+0.15,4.15,"key: "+lig,fontsize=10,color=OXT,weight="bold")
+    ax.text(x+0.15,4.15,"key: "+lig,fontsize=9.5,color=OXT,weight="bold")
     ax.text(x+0.15,3.75,"nuclear · slow (hours)" if kind=="nuclear" else "membrane GPCR · fast",fontsize=9,color=CA)
     ax.text(x+0.15,3.45,where,fontsize=9.5,va="top",linespacing=1.35)
-    ax.text(x+1.275,0.75,why,fontsize=9.5,ha="center",va="center",style="italic",color=MAUVE)
-ax.add_patch(Circle((0.4,0.05),0.1,color=REC)); ax.text(0.6,0.05,"nuclear receptor (binds DNA, switches genes)",fontsize=9,va="center")
-ax.add_patch(RegularPolygon((5.6,0.05),4,radius=0.13,color=GQ)); ax.text(5.8,0.05,"GPCR (fast signal)",fontsize=9,va="center")
-ax.text(8.2,0.05,"♂ male   ♀ female   ◎ both sexes",fontsize=9,va="center")
+    ax.text(x+1.275,1.65,why,fontsize=9.5,ha="center",va="center",style="italic",color=MAUVE)
+ax.add_patch(Circle((0.4,0.9),0.1,color=REC)); ax.text(0.6,0.9,"nuclear receptor (binds DNA, switches genes)",fontsize=9,va="center")
+ax.add_patch(RegularPolygon((5.6,0.9),4,radius=0.13,color=GQ)); ax.text(5.8,0.9,"GPCR (fast signal)",fontsize=9,va="center")
+ax.text(8.2,0.9,"♂ male   ♀ female   ◎ both sexes",fontsize=9,va="center")
 save(fig,"receptors-sex-steroid-cast.png")
 
 # ---- 2. HPG axis
-fig,ax=plt.subplots(figsize=(12,8)); ax.set_xlim(0,12); ax.set_ylim(0,8); ax.axis("off")
+fig,ax=plt.subplots(figsize=(14,8)); ax.set_xlim(-1.5,13.5); ax.set_ylim(0,8); ax.axis("off")
 ax.text(6,7.75,"The HPG axis — a chain of receptors",ha="center",fontsize=16,weight="bold")
 def node(x,y,w,h,title,sub,c):
     box(ax,x,y,w,h,c); ax.text(x+w/2,y+h-0.3,title,ha="center",fontsize=12,weight="bold"); ax.text(x+w/2,y+0.35,sub,ha="center",fontsize=9.5,va="bottom")
@@ -65,7 +65,7 @@ arrow(ax,(4.6,4.0),(2.9,3.25),INK); arrow(ax,(7.4,4.0),(9.1,3.25),INK)
 ax.text(2.6,3.65,"LH + FSH",fontsize=10,weight="bold"); ax.text(8.6,3.65,"LH + FSH",fontsize=10,weight="bold")
 # feedback
 arrow(ax,(0.4,3.25),(3.45,6.6),CA,lw=1.8,rad=-0.35,ls="--"); arrow(ax,(11.6,3.25),(8.55,6.6),CA,lw=1.8,rad=0.35,ls="--")
-ax.text(0.15,5.3,"feedback:\ntestosterone,\nestradiol on\nAR ● / ERα ●\nslow the drum",fontsize=9,color=CA)
-ax.text(10.1,5.3,"mid-cycle:\nhigh estradiol\nbriefly boosts\nthe drum → LH\nsurge",fontsize=9,color=CA)
+ax.text(-1.45,5.3,"feedback:\ntestosterone,\nestradiol on\nAR ● / ERα ●\nslow the drum",fontsize=9,color=CA)
+ax.text(12.0,5.3,"mid-cycle:\nhigh estradiol\nbriefly boosts\nthe drum → LH\nsurge",fontsize=9,color=CA)
 ax.text(6,0.15,"◆ GPCR (fast)   ● nuclear receptor (slow)   ·   pulses drive the axis; a constant flood shuts it down",ha="center",fontsize=9,color=SOFT)
 save(fig,"receptors-hpg-axis.png")

@@ -1,5 +1,13 @@
+![Corpus Nova](../figures/branding/cn-paper-header.png)
+
 # Recreating Human Connections with Exact Receptor Knowledge
 
+*Receptor-level human connections · White paper #1*
+
+---
+**Corpus Nova** · Theme 3 · Universal readers · PhD-worthy depth · Voice: alien-technology minimal · **License:** MIT · 2026-11-01
+
+---
 **Theme 3 · Receptor-level human connections · White paper #1**
 **Audience:** everyone curious, from first-time readers to working scientists
 **Status:** v2 (map-first + sex biology) · 2026-11-01
@@ -121,7 +129,7 @@ Receptors only matter where they are. A ligand that floats past a cell without t
 
 Human gene-expression maps show *OXTR* is richest in subcortical and smell-related regions, and it rises and falls in step with dopamine-related genes (Quintana et al., 2019). In other words, the connection receptors and the reward receptors tend to live next to each other.
 
-These hubs feed the project's interactive body map: `body-map/overlays/receptors-overlays.json`. Map ids: `brain.pvn`, `brain.vta`, `brain.nacc`, `brain.ventral-pallidum`, `brain.amygdala`, `brain.pfc`, `brain.dacc-insula`, `brain.lateral-septum`, `heart`, `uterus`, `breast`, `pituitary.anterior`.
+These hubs feed the project's interactive body map: `body-map/overlays/receptors-overlays.json`. Map ids: `brain.pvn`, `brain.vta`, `brain.nacc`, `brain.ventral-pallidum`, `brain.amygdala`, `brain.pfc`, `brain.dacc-insula`, `brain.lateral-septum`, `heart`, `uterus`, `breast`.
 
 ---
 
@@ -432,3 +440,6 @@ This is where it's easy to say too much. Here is what the evidence supports:
 52. Zubieta JK, Smith YR, Bueller JA, et al. (2002). µ-Opioid receptor-mediated antinociceptive responses differ in men and women. *Journal of Neuroscience* 22(12):5100–5107. PMID 12077205.
 
 *Optional motion figure:* `../figures/receptors/receptors-oxtr-path.gif` — a looping knock → Gq → Ca²⁺ pulse.
+
+---
+**License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.

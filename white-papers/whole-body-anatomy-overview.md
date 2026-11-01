@@ -1,13 +1,20 @@
+![Corpus Nova](../figures/branding/cn-paper-header.png)
+
 # The Body as One Map: Nested Systems from Skin to Signal
 
-*Human Anatomy & Biology project · Theme 6 (Whole Body) · White paper 1 · Draft v2, 1 Nov 2026*  
+*Human Anatomy & Biology project · Whole Body · White paper 1 · Draft v3 (map-first + sex biology)*
+
+---
+**Corpus Nova** · Theme 6 · Universal readers · PhD-worthy depth · Voice: alien-technology minimal · **License:** MIT · 2026-11-01
+
+---
 *For: anyone curious about the real human body, from first-year students to working scientists.*
 
 ---
 
 ## Abstract
 
-A human body is a set of boxes inside boxes. It keeps itself alive by trading matter, energy, and information across every box wall. This paper is a flyover of that stack: the organ systems, the jumps in scale, and the three big coordinators (nervous, endocrine, immune) that keep roughly 30 trillion cells working as one organism. Think of it as the map on the wall. The sibling papers, the interactive body map, and the library zoom in on single streets.
+A human body is a set of boxes inside boxes. It keeps itself alive by trading matter, energy, and information across every box wall. This paper is a flyover of that stack: the organ systems, the jumps in scale, and the three big coordinators (nervous, endocrine, immune) that keep roughly 30 trillion cells working as one organism. Think of it as the map on the wall. The paper is written **map-first**: every place it describes becomes a hover payload on the interactive body map (§6), with a shared base and equal-depth male and female layers. The sibling papers and the library zoom in on single streets.
 
 ---
 
@@ -99,7 +106,7 @@ The endocrine glands (hypothalamus–pituitary, thyroid, adrenals, pancreatic is
 
 The immune system is not one organ. It is a distributed network: marrow, thymus, spleen, lymph nodes, gut-associated tissue, and mobile cells everywhere. The lymphatic vessels return leaked fluid to the blood and carry immune traffic. Even the brain, long thought to lack lymphatics, has functional lymphatic vessels in its outer coverings (the meninges) [9].
 
-The reproductive system is the odd one out. It does almost nothing for the individual's survival. It is all about the next generation.
+The reproductive system is the odd one out. It does almost nothing for the individual's survival. It is all about the next generation. It is also the one system built two ways from one plan. Early embryos of both sexes have the same "indifferent" gonad and both duct sets; the sex chromosomes and, above all, testosterone decide which build is finished [4, 7]. In males, testes make sperm and testosterone, and a pipeline of ducts and glands (epididymis, vas deferens, seminal vesicles, prostate) delivers sperm. In females, ovaries hold a finite egg bank and run a monthly hormone clock, and the uterine tubes, uterus, cervix, and vagina form the route for egg, sperm, and pregnancy. Section 6.1 puts both builds on the map at equal depth.
 
 *Abstract job:* **defence + memory** (immune); **lineage** (reproductive).
 
@@ -148,7 +155,7 @@ Three refinements make the picture more accurate.
 
 **It predicts.** Feedback alone is slow: it only acts after an error. Sterling's **allostasis** framework argues the brain mostly regulates by *prediction*: it raises blood pressure *before* you stand up and releases insulin *as* you start eating [13]. Think of homeostasis as the thermostat and allostasis as the weather forecast that adjusts the thermostat ahead of time. The two ideas are complementary, not rivals.
 
-Positive feedback exists too: childbirth contractions and blood clotting are examples. But it is used for short, self-ending events, never for steady control.
+Positive feedback exists too: childbirth contractions and blood clotting are examples. It is used for short, self-ending events. The one famous exception sits in the female hormone clock. Once estradiol stays high for long enough, it flips from braking the pituitary to flooding it, which triggers the LH surge and ovulation [7]. So the male reproductive axis behaves like a **thermostat** and the female one like a **clock with a trigger**. Same parts, different wiring.
 
 Why call this a *design principle*? Because once you see it, anatomy reads differently. The kidney is a sensor-effector pair for salt and water. The lungs are an effector for CO₂ and pH. The skin is an effector for heat. Most organs make more sense as **actuators in a control system** than as standalone parts.
 
@@ -158,19 +165,48 @@ Why call this a *design principle*? Because once you see it, anatomy reads diffe
 
 This paper is the "you are here" sign. Two other project surfaces let you go deeper.
 
-**The interactive body map** (`body-map/`). Hover over a region and it reveals what lives there. The regions follow this paper's logic:
+**The interactive body map** (`body-map/`). This paper is written to feed it. Each region below is extracted into a payload file (`body-map/panels/whole-body-panels.json`) with hover fields (title, summary, organs, vessels, receptor pointers, facts with citations) and the 3D mesh IDs it lights up in an open-source atlas (we build on slorksmo/Human-Atlas, which has a male body from BodyParts3D [31] and a female body from the Human Reference Atlas, gap-filled with Visible Human Female leg muscles [32]; see `body-map/README.md`).
 
-| Map region | What hovering shows | Paper section |
+| Region ID | What hovering shows | Layers | Paper section |
+|---|---|---|---|
+| `head-neck` | Brain, senses, hypothalamus + pituitary (hormone command), carotids, jugulars | shared | 3.3, 3.6, 6.2 |
+| `thorax` | Heart pumping, lungs, great vessels; breast on the female layer | shared + ♀ | 3.4, 6.1 |
+| `abdomen` | Gut, liver + portal vein, kidneys, adrenals, belly fat depots | shared | 3.5, 3.6 |
+| `pelvis` | Bladder, rectum; testes + ducts + glands **or** ovaries + tubes + uterus | shared + ♂ + ♀ | 3.6, 3.7, 6.1, 6.2 |
+| `upper-limb`, `lower-limb` | Bones, muscles, veins returning blood; hip/thigh fat | shared | 3.2, 3.4 |
+
+Other themes add **overlays** to the same regions instead of new maps: receptors, fat depots, bone volume, and cell-level zooms (`body-map/integration.md`).
+
+Two rules from this paper carry straight into the map. First, **pressure falls as blood travels**: high in the arteries, low in the veins, near zero back at the heart [7]. That is why vein pressures on the map are small numbers. Second, **every region is part of several systems at once**. The map lets you switch layers (organs, vessels, receptors, fat, sex) instead of pretending each organ belongs to one box.
+
+### 6.1 Two builds on one map: the sex layers
+
+Most of a body is the same in everyone, so the map has a **shared** base plus a **male layer** and a **female layer**. Switching body swaps the 3D model and the layer together. The pelvis changes most; the breast changes on the chest; the hormone *doses* change everywhere.
+
+| | Male layer | Female layer |
 |---|---|---|
-| Head & neck | Brain, sense organs, carotid arteries, jugular veins | 3.3 Nervous |
-| Thorax (chest) | Heart pumping, lungs, great vessels, pressures | 3.4 Flow & gas |
-| Abdomen | Gut, liver and portal vein, kidneys | 3.5, 3.6 |
-| Pelvis | Bladder, reproductive organs | 3.6, 3.7 |
-| Upper & lower limbs | Bones, muscles, veins returning blood | 3.2, 3.4 |
+| Gonad | Testes: sperm + testosterone | Ovaries: egg bank + estradiol/progesterone clock |
+| Route | Epididymis → vas deferens → ejaculatory duct → urethra | Uterine tube → uterus → cervix → vagina |
+| Glands | Seminal vesicles, prostate, bulbourethral | Vestibular (Bartholin's) and paraurethral (Skene's) glands; breast |
+| Gonad blood | Testicular artery from the aorta; left vein drains to the left renal vein | Ovarian artery from the aorta; same venous pattern; uterine artery from the internal iliac |
 
-Two rules from this paper carry straight into the map. First, **pressure falls as blood travels**: high in the arteries, low in the veins, near zero back at the heart [7]. That is why vein pressures on the map are small numbers. Second, **every region is part of several systems at once**. The map lets you switch layers (organs, vessels, receptors) instead of pretending each organ belongs to one box.
+Several parts are **homologues**, grown from the same embryonic tissue: testis ↔ ovary, penis ↔ clitoris, scrotum ↔ labia majora, prostate ↔ paraurethral glands [4]. The map links each pair with a "compare" button. Where an open atlas has no mesh (for example, the female body has no pituitary or vulva model yet), the map shows a labelled pin, never a borrowed mesh from the other body.
 
-**The universal library** (`library/`). Short entries for anything the map or papers mention. The whole-body shelf (`library/whole-body/`) holds the nested-systems summary, the coordination trio, and a glossary of map terms. Other shelves (DNA, diseases such as lupus and cancer, pressures, receptors, bone, fat) belong to their owners. This paper only points at them.
+### 6.2 Hormones: dose and source, not presence
+
+Everyone makes testosterone, estradiol, and progesterone. The sexes differ in **how much**, **where from**, and **when**.
+
+**Testosterone in males.** About 500 million Leydig cells, tucked between the sperm tubules of the testes, make 3–10 mg of testosterone a day (mean about 7 mg) [18]. The command chain is short: the hypothalamus pulses GnRH, the pituitary releases LH, LH binds its receptor (LHCGR) on Leydig cells, cAMP rises, and the protein StAR moves cholesterol into mitochondria, where enzymes CYP11A1, CYP17A1, HSD3B2, and the testis-specific HSD17B3 turn it into testosterone [19, 20]. Inside the testis, testosterone runs about 100 times higher than in blood, which sperm production needs [17]. In blood, most of it rides on SHBG and albumin; only about 2% is free [21]. A harmonized reference range for healthy, non-obese men aged 19–39 is 264–916 ng/dL (about 9.2–31.8 nmol/L) [16]. Levels peak in the morning: in men aged 30–40, values at 16:00 run 20–25% lower than at 08:00 [22], which is why diagnosis uses repeated morning samples [25]. Over mid-life, total testosterone drifts down about 1.6% per year within the same man [23].
+
+**Testosterone in females.** From puberty on, men's blood levels exceed women's by more than 15-fold; women typically sit at about 0–1.7 nmol/L [18]. The sources are split: roughly a third each from the ovaries, the adrenals, and conversion of precursor hormones in fat, skin, and liver [18, 26].
+
+**The female clock.** Ovarian follicles make estradiol under FSH; rising estradiol eventually triggers the LH surge; the empty follicle becomes the corpus luteum and makes progesterone. In over 600,000 app-tracked cycles, the mean cycle was 29.3 days, with a follicular phase of 16.9 days and a luteal phase of 12.4 days, and both vary between people [24]. The egg bank is finite: by age 30 a typical woman has about 12% of her peak follicle count, by 40 about 3%; age alone explains 81% of the variation [27]. Menopause follows at around 50–51.
+
+**The ignition.** Puberty in both sexes starts when kisspeptin switches on GnRH neurons. People with broken kisspeptin receptors (GPR54) never enter puberty [28]. On the male side, one round of sperm production takes about 64 days [29], though that classic figure may be off by several days [30].
+
+Each of these facts is attached to a region payload: `pelvis` (male and female layers), `head-neck` (hypothalamus, pituitary), and `abdomen` (adrenals). Depth lives in `library/hormones/`, `library/male-reproductive/`, and `library/female-reproductive/`; receptor detail stays with the Receptors paper.
+
+**The universal library** (`library/`). Short entries for anything the map or papers mention. The whole-body shelf (`library/whole-body/`) holds the nested-systems summary, the coordination trio, and a glossary of map terms. New shelves for this draft hold the hormones overview (testosterone, estrogen and progesterone, the HPG axis) and the male and female reproductive systems. Other shelves (DNA, diseases such as lupus and cancer, pressures, receptors, bone, fat) belong to their owners. This paper only points at them.
 
 ---
 
@@ -182,7 +218,7 @@ Whole-body anatomy can feel "finished." Gray's has been in print since 1858 [4].
 
 **2. Anatomy is still being found.** Meningeal lymphatic vessels were described functionally only in 2015 [9]. New imaging (tissue clearing, light-sheet microscopy, whole-body MRI and PET) keeps finding structures and connections that dissection missed.
 
-**3. The variable "reference human."** Textbook values come from reference individuals, often a 70 kg young man [5, 8]. Real bodies differ by sex, age, ancestry, body size, and health. How much of "standard anatomy" is a population average that no single person matches?
+**3. The variable "reference human."** Textbook values come from reference individuals, often a 70 kg young man [5, 8]. Real bodies differ by sex, age, ancestry, body size, and health. Even open 3D atlases inherit this: the most-used one is a single adult male [31], and a full female reference body arrived much later. That is why our map carries two builds. How much of "standard anatomy" is a population average that no single person matches?
 
 **4. Where do set points live?** We can name sensors and effectors. We are much worse at saying *where* a set point is encoded, how it shifts with age or disease, and how the brain's predictions get tuned [12, 13].
 
@@ -221,3 +257,23 @@ All figures are simple schematics, not to scale, with transparent backgrounds. D
 13. Sterling P. Allostasis: a model of predictive regulation. *Physiol Behav.* 2012;106(1):5–15. doi:10.1016/j.physbeh.2011.06.004
 14. Regev A, Teichmann SA, Lander ES, et al. The Human Cell Atlas. *eLife.* 2017;6:e27041. doi:10.7554/eLife.27041
 15. Netter FH. *Netter Atlas of Human Anatomy: Classic Regional Approach.* 8th ed. Elsevier; 2022. ISBN 978-0-323-68042-4. (Visual reference for regional anatomy.)
+16. Travison TG, Vesper HW, Orwoll E, et al. Harmonized reference ranges for circulating testosterone levels in men of four cohort studies in the United States and Europe. *J Clin Endocrinol Metab.* 2017;102(4):1161–1173. doi:10.1210/jc.2016-2935
+17. Jarow JP, Zirkin BR. The androgen microenvironment of the human testis and hormonal control of spermatogenesis. *Ann N Y Acad Sci.* 2005;1061:208–220. doi:10.1196/annals.1336.023
+18. Handelsman DJ, Hirschberg AL, Bermon S. Circulating testosterone as the hormonal basis of sex differences in athletic performance. *Endocr Rev.* 2018;39(5):803–829. doi:10.1210/er.2018-00020
+19. Miller WL, Auchus RJ. The molecular biology, biochemistry, and physiology of human steroidogenesis and its disorders. *Endocr Rev.* 2011;32(1):81–151. doi:10.1210/er.2010-0013
+20. Payne AH, Hales DB. Overview of steroidogenic enzymes in the pathway from cholesterol to active steroid hormones. *Endocr Rev.* 2004;25(6):947–970. doi:10.1210/er.2003-0030
+21. Dunn JF, Nisula BC, Rodbard D. Transport of steroid hormones: binding of 21 endogenous steroids to both testosterone-binding globulin and corticosteroid-binding globulin in human plasma. *J Clin Endocrinol Metab.* 1981;53(1):58–68. doi:10.1210/jcem-53-1-58
+22. Brambilla DJ, Matsumoto AM, Araujo AB, McKinlay JB. The effect of diurnal variation on clinical measurement of serum testosterone and other sex hormone levels in men. *J Clin Endocrinol Metab.* 2009;94(3):907–913. doi:10.1210/jc.2008-1902
+23. Feldman HA, Longcope C, Derby CA, et al. Age trends in the level of serum testosterone and other hormones in middle-aged men: longitudinal results from the Massachusetts Male Aging Study. *J Clin Endocrinol Metab.* 2002;87(2):589–598. doi:10.1210/jcem.87.2.8201
+24. Bull JR, Rowland SP, Scherwitzl EB, Scherwitzl R, Danielsson KG, Harper J. Real-world menstrual cycle characteristics of more than 600,000 menstrual cycles. *npj Digit Med.* 2019;2:83. doi:10.1038/s41746-019-0152-7
+25. Bhasin S, Brito JP, Cunningham GR, et al. Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline. *J Clin Endocrinol Metab.* 2018;103(5):1715–1744. doi:10.1210/jc.2018-00229
+26. Burger HG. Androgen production in women. *Fertil Steril.* 2002;77 Suppl 4:S3–S5. doi:10.1016/S0015-0282(02)02985-0
+27. Wallace WHB, Kelsey TW. Human ovarian reserve from conception to the menopause. *PLoS ONE.* 2010;5(1):e8772. doi:10.1371/journal.pone.0008772
+28. Seminara SB, Messager S, Chatzidaki EE, et al. The GPR54 gene as a regulator of puberty. *N Engl J Med.* 2003;349(17):1614–1627. doi:10.1056/NEJMoa035322
+29. Heller CG, Clermont Y. Spermatogenesis in man: an estimate of its duration. *Science.* 1963;140(3563):184–186. doi:10.1126/science.140.3563.184
+30. Amann RP. The cycle of the seminiferous epithelium in humans: a need to revisit? *J Androl.* 2008;29(5):469–487. doi:10.2164/jandrol.107.004655
+31. Mitsuhashi N, Fujieda K, Tamura T, Kawamoto S, Takagi T, Okubo K. BodyParts3D: 3D structure database for anatomical concepts. *Nucleic Acids Res.* 2009;37(Database issue):D782–D785. doi:10.1093/nar/gkn613
+32. Andreassen TE, Hume DR, Hamilton LD, et al. Three-dimensional lower extremity musculoskeletal geometry of the Visible Human Female and Male. *Sci Data.* 2023;10:34. doi:10.1038/s41597-022-01905-2
+
+---
+**License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.

@@ -1,6 +1,6 @@
 # Whole-Body theme — handoff note (2026-11-01)
 
-**Paper:** `white-papers/whole-body-anatomy-overview.md` (draft v2, universal audience)
+**Paper:** `white-papers/whole-body-anatomy-overview.md` (**draft v3**: map-first + sex biology; 4,421 words, up from 3,011)
 **Figures:** `figures/whole-body/whole-body-scale-ladder.png`, `whole-body-systems-map.png` (transparent PNG), `whole-body-homeostasis-loop.gif` (transparent GIF, 48 frames, loops)
 **Sources:** `sources/whole-body-overview-sources.md`
 
@@ -23,6 +23,9 @@
 | **Adipose** | How fat is built and stored, depots, adipogenesis (paper only lists fat as a hormone-making connective tissue) |
 
 ## Library / map
-- Did not modify `library/` or `body-map/` seeds except one appended "source paper" pointer line in `library/whole-body/README.md`.
-- Map region table in paper Section 6 mirrors `body-map/regions/index.md`; if regions are renamed, update that table.
+- **Whole Body owns map structure + the sex-layer overview.** Receptors still owns receptor deep-dives; BioChem owns hormone chemistry zoom cards; Adipose, Bone, Cell Physics own their overlays.
+- Map extracts (v3): `body-map/panels/whole-body-panels.json` (6 regions + 8 global panels), `body-map/overlays/sex-layers.json` (25 ♂/♀/shared structures), index `body-map/panels/README.md`, rebuild scripts in `body-map/panels/`.
+- Docs: `body-map/README.md` (atlas recommendation: slorksmo/Human-Atlas primary), `body-map/sex-layers.md`, `body-map/integration.md` (adipose, receptors, bone, cell-physics overlays wired by reference, not rewritten).
+- Library shelves seeded: `library/hormones/` overview cards (overview, testosterone, estrogen-progesterone, hpg-axis — README is BioChem's combined index, do not overwrite), `library/male-reproductive/`, `library/female-reproductive/`.
+- Region IDs in paper §6 mirror `body-map/regions/index.md` and the panels JSON; if regions are renamed, update all three and re-run the build scripts.
 - Vein-pressure numbers are NOT given in this paper; they live in `library/pressures/vein-pressures.md`.

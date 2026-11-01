@@ -44,3 +44,6 @@ In-vivo bio/chem as primary → BioChem; receptors → Receptors; adipose → Ad
 - Sperm flagellar / low-Re swimming
 - Oocyte size & crowding
 - Steroidogenic ER packing (Leydig / theca)
+
+---
+**License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.
