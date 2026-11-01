@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "theme": "adipose",
+  "description": "Fat-depot map layers for the interactive body map. Male/female (or dual-layer) patterns. Do not reinvent 3D viewers \u2014 inject as panel/hover payloads (see notes/github-anatomy-landscape.md).",
+  "viewer_note": "Prefer ashemag/human-atlas or slorksmo/Human-Atlas; our job is payloads only.",
+  "sex_layers": [
+    "male",
+    "female",
+    "shared"
+  ],
+  "depots": [
+    {
+      "id": "depot.subcutaneous.abdominal",
+      "label": "Abdominal subcutaneous fat",
+      "map_regions": [
+        "abdomen",
+        "flanks"
+      ],
+      "fat_type": "subcutaneous",
+      "layers": {
+        "shared": {
+          "hover_title": "Under-skin belly fat",
+          "summary": "Largest everyday archive under the belly wall \u2014 same chemistry as other white fat, different neighbors than visceral pads."
+        },
+        "male": {
+          "hover_title": "Android-leaning subcutaneous belt",
+          "summary": "Men more often expand this abdominal under-skin belt alongside visceral pads \u2014 the classic upper-body pattern."
+        },
+        "female": {
+          "hover_title": "Belly wall store (premenopausal quieter)",
+          "summary": "Premenopausal women usually keep more of their surplus in hips/thighs; this belly wall store grows more after estrogen falls."
+        }
+      },
+      "library": [
+        "library/adipose-metabolism/depots.md",
+        "library/adipose-metabolism/sex-hormones-and-fat.md"
+      ]
+    },
+    {
+      "id": "depot.visceral.omental_mesenteric",
+      "label": "Visceral (omentum / mesentery)",
+      "map_regions": [
+        "abdomen"
+      ],
+      "fat_type": "visceral",
+      "layers": {
+        "shared": {
+          "hover_title": "Deep belly fat around organs",
+          "summary": "Smaller volume than under-skin fat, but drains toward the liver via the portal vein \u2014 a busy, leakier account."
+        },
+        "male": {
+          "hover_title": "Visceral pad \u2014 often larger share",
+          "summary": "On average men carry a higher visceral share for a given body size; androgens and android patterning play into this."
+        },
+        "female": {
+          "hover_title": "Visceral pad \u2014 rises after menopause",
+          "summary": "Premenopause: relatively less visceral fat. After estrogen drops, visceral share often climbs toward a more central pattern."
+        }
+      },
+      "library": [
+        "library/adipose-metabolism/depots.md",
+        "library/adipose-metabolism/sex-hormones-and-fat.md"
+      ]
+    },
+    {
+      "id": "depot.gluteofemoral",
+      "label": "Gluteofemoral subcutaneous fat",
+      "map_regions": [
+        "pelvis",
+        "lower-limb"
+      ],
+      "fat_type": "subcutaneous",
+      "layers": {
+        "shared": {
+          "hover_title": "Hips & thighs archive",
+          "summary": "A long-term deposit under the skin of hips, buttocks, and thighs \u2014 often metabolically quieter than visceral fat."
+        },
+        "male": {
+          "hover_title": "Limb store (usually smaller share)",
+          "summary": "Present in everyone; typically a smaller fraction of total fat than in premenopausal women."
+        },
+        "female": {
+          "hover_title": "Gynoid pattern \u2014 estrogen-favored",
+          "summary": "Estrogen helps steer storage here during reproductive years \u2014 the classic pear-shaped lower-body pattern."
+        }
+      },
+      "library": [
+        "library/adipose-metabolism/sex-hormones-and-fat.md",
+        "library/adipose-metabolism/depots.md"
+      ]
+    },
+    {
+      "id": "depot.brown.supraclavicular",
+      "label": "Brown / beige fat (neck\u2013collar)",
+      "map_regions": [
+        "head-neck",
+        "thorax"
+      ],
+      "fat_type": "brown",
+      "layers": {
+        "shared": {
+          "hover_title": "Heat-making fat pockets",
+          "summary": "Adult brown/beige activity shows up on PET near neck and collarbones in the cold \u2014 fuel burned as heat, not archived."
+        },
+        "male": {
+          "hover_title": "Cold-activated upper chest/neck",
+          "summary": "Detectable in many adult men on cold exposure; amount varies widely with age, leanness, and outdoor habits."
+        },
+        "female": {
+          "hover_title": "Cold-activated upper chest/neck",
+          "summary": "Also present in women; sex differences exist in studies but the map job is the same \u2014 show the heat layer when active."
+        }
+      },
+      "library": [
+        "library/adipose-metabolism/fat-cell-types.md"
+      ]
+    },
+    {
+      "id": "depot.epicardial",
+      "label": "Epicardial fat",
+      "map_regions": [
+        "thorax",
+        "heart"
+      ],
+      "fat_type": "specialized",
+      "layers": {
+        "shared": {
+          "hover_title": "Fat pad on the heart",
+          "summary": "A thin specialized depot on the heart surface \u2014 keep it distinct from belly visceral fat in the UI."
+        }
+      },
+      "library": [
+        "library/adipose-metabolism/depots.md"
+      ]
+    },
+    {
+      "id": "depot.perirenal",
+      "label": "Perirenal fat",
+      "map_regions": [
+        "abdomen"
+      ],
+      "fat_type": "visceral-adjacent",
+      "layers": {
+        "shared": {
+          "hover_title": "Fat near the kidneys",
+          "summary": "Deep pad beside the kidneys \u2014 map as visceral-adjacent, not the under-skin belly belt."
+        }
+      },
+      "library": [
+        "library/adipose-metabolism/depots.md"
+      ]
+    }
+  ],
+  "sex_toggle": {
+    "male_label": "Male fat pattern",
+    "female_label": "Female fat pattern",
+    "dual_note": "Show dual-layer or toggle; android (central) vs gynoid (gluteofemoral) is the main story."
+  },
+  "paper": "white-papers/adipose-01-how-fat-is-built.md",
+  "figures": [
+    "figures/adipose/adipose-meal-to-droplet.png",
+    "figures/adipose/adipose-white-vs-brown.png",
+    "figures/adipose/adipose-hypertrophy-vs-hyperplasia.png"
+  ]
+}

@@ -1,0 +1,562 @@
+{
+  "version": 1,
+  "theme": "bone-volume",
+  "description": "Skeletal sector, compartment, laterality and sex-layer hover payloads. Universal labels; every number cites sources/bone-volume-sources.md.",
+  "source_of_truth": [
+    "white-papers/bone-volume-sectors-laterality.md",
+    "sources/bone-volume-sources.md",
+    "body-map/bone-volume-hover-notes.md",
+    "library/bone-metrics/"
+  ],
+  "mesh_policy": "Reuse BodyParts3D-derived meshes (ashemag/human-atlas, slorksmo/Human-Atlas, Z-Anatomy). Sectors = clip/shader bands on existing bone meshes; do not create new meshes. Keep CC BY / CC BY-SA attribution.",
+  "regions": [
+    {
+      "id": "bone.femur.prox",
+      "label": "Femur · proximal",
+      "notes_key": "proximal",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right femur",
+          "left femur"
+        ],
+        "sub_region": "proximal third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Proximal bone volume",
+        "summary": "Near the joint: spongy (trabecular) core inside a thin shell. A shock-absorber room.",
+        "numbers": [
+          {
+            "text": "Femoral head ≈ 50:50 cortical:trabecular",
+            "cite": "Clarke 2008"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.femur.mid",
+      "label": "Femur · midshaft",
+      "notes_key": "midshaft",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right femur",
+          "left femur"
+        ],
+        "sub_region": "midshaft third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Midshaft bone volume",
+        "summary": "The tube in the middle: a thick cortical wall around marrow. A strong hollow beam.",
+        "numbers": [
+          {
+            "text": "Radial shaft ≈ 95:5 cortical:trabecular",
+            "cite": "Clarke 2008"
+          },
+          {
+            "text": "With age, bone area +15–16% while cortex drifts outward",
+            "cite": "Riggs 2004"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.femur.dist",
+      "label": "Femur · distal",
+      "notes_key": "distal",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right femur",
+          "left femur"
+        ],
+        "sub_region": "distal third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Distal bone volume",
+        "summary": "Toward the far joint: spongy volume rises again and the shell thins.",
+        "numbers": [
+          {
+            "text": "Distal radius, women 50–80: 68% of bone lost was cortical, 32% trabecular",
+            "cite": "Zebaze 2010"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.tibia.prox",
+      "label": "Tibia · proximal",
+      "notes_key": "proximal",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right tibia",
+          "left tibia"
+        ],
+        "sub_region": "proximal third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Proximal bone volume",
+        "summary": "Near the joint: spongy (trabecular) core inside a thin shell. A shock-absorber room.",
+        "numbers": [
+          {
+            "text": "Femoral head ≈ 50:50 cortical:trabecular",
+            "cite": "Clarke 2008"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.tibia.mid",
+      "label": "Tibia · midshaft",
+      "notes_key": "midshaft",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right tibia",
+          "left tibia"
+        ],
+        "sub_region": "midshaft third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Midshaft bone volume",
+        "summary": "The tube in the middle: a thick cortical wall around marrow. A strong hollow beam.",
+        "numbers": [
+          {
+            "text": "Radial shaft ≈ 95:5 cortical:trabecular",
+            "cite": "Clarke 2008"
+          },
+          {
+            "text": "With age, bone area +15–16% while cortex drifts outward",
+            "cite": "Riggs 2004"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.tibia.dist",
+      "label": "Tibia · distal",
+      "notes_key": "distal",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right tibia",
+          "left tibia"
+        ],
+        "sub_region": "distal third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Distal bone volume",
+        "summary": "Toward the far joint: spongy volume rises again and the shell thins.",
+        "numbers": [
+          {
+            "text": "Distal radius, women 50–80: 68% of bone lost was cortical, 32% trabecular",
+            "cite": "Zebaze 2010"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.humerus.prox",
+      "label": "Humerus · proximal",
+      "notes_key": "proximal",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right humerus",
+          "left humerus"
+        ],
+        "sub_region": "proximal third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Proximal bone volume",
+        "summary": "Near the joint: spongy (trabecular) core inside a thin shell. A shock-absorber room.",
+        "numbers": [
+          {
+            "text": "Femoral head ≈ 50:50 cortical:trabecular",
+            "cite": "Clarke 2008"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.humerus.mid",
+      "label": "Humerus · midshaft",
+      "notes_key": "midshaft",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right humerus",
+          "left humerus"
+        ],
+        "sub_region": "midshaft third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Midshaft bone volume",
+        "summary": "The tube in the middle: a thick cortical wall around marrow. A strong hollow beam.",
+        "numbers": [
+          {
+            "text": "Radial shaft ≈ 95:5 cortical:trabecular",
+            "cite": "Clarke 2008"
+          },
+          {
+            "text": "With age, bone area +15–16% while cortex drifts outward",
+            "cite": "Riggs 2004"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.humerus.dist",
+      "label": "Humerus · distal",
+      "notes_key": "distal",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right humerus",
+          "left humerus"
+        ],
+        "sub_region": "distal third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Distal bone volume",
+        "summary": "Toward the far joint: spongy volume rises again and the shell thins.",
+        "numbers": [
+          {
+            "text": "Distal radius, women 50–80: 68% of bone lost was cortical, 32% trabecular",
+            "cite": "Zebaze 2010"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.radius.prox",
+      "label": "Radius · proximal",
+      "notes_key": "proximal",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right radius",
+          "left radius"
+        ],
+        "sub_region": "proximal third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Proximal bone volume",
+        "summary": "Near the joint: spongy (trabecular) core inside a thin shell. A shock-absorber room.",
+        "numbers": [
+          {
+            "text": "Femoral head ≈ 50:50 cortical:trabecular",
+            "cite": "Clarke 2008"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.radius.mid",
+      "label": "Radius · midshaft",
+      "notes_key": "midshaft",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right radius",
+          "left radius"
+        ],
+        "sub_region": "midshaft third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Midshaft bone volume",
+        "summary": "The tube in the middle: a thick cortical wall around marrow. A strong hollow beam.",
+        "numbers": [
+          {
+            "text": "Radial shaft ≈ 95:5 cortical:trabecular",
+            "cite": "Clarke 2008"
+          },
+          {
+            "text": "With age, bone area +15–16% while cortex drifts outward",
+            "cite": "Riggs 2004"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.radius.dist",
+      "label": "Radius · distal",
+      "notes_key": "distal",
+      "mesh_binding": {
+        "source": "BodyParts3D (via ashemag/human-atlas or slorksmo/Human-Atlas)",
+        "meshes": [
+          "right radius",
+          "left radius"
+        ],
+        "sub_region": "distal third along long axis (shader/clip band; no new mesh)",
+        "note": "verify exact mesh names/FMA IDs against the atlas manifest before wiring"
+      },
+      "hover": {
+        "title": "Distal bone volume",
+        "summary": "Toward the far joint: spongy volume rises again and the shell thins.",
+        "numbers": [
+          {
+            "text": "Distal radius, women 50–80: 68% of bone lost was cortical, 32% trabecular",
+            "cite": "Zebaze 2010"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.vertebra.body",
+      "label": "Vertebral body",
+      "notes_key": "compartments",
+      "mesh_binding": {
+        "source": "BodyParts3D",
+        "meshes": [
+          "lumbar vertebrae (e.g. L1–L5)"
+        ],
+        "sub_region": "vertebral body",
+        "note": "verify names in manifest"
+      },
+      "hover": {
+        "title": "Mostly sponge",
+        "summary": "A thin shell around a big trabecular core.",
+        "numbers": [
+          {
+            "text": "Vertebra ≈ 25:75 cortical:trabecular",
+            "cite": "Clarke 2008"
+          },
+          {
+            "text": "Cortical shell ≈ 0.38 mm thick",
+            "cite": "Eswaran 2006"
+          },
+          {
+            "text": "Near endplates trabecular bone carries 76–89% of load",
+            "cite": "Eswaran 2006"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.femur.neck",
+      "label": "Femoral neck",
+      "notes_key": "proximal",
+      "mesh_binding": {
+        "source": "BodyParts3D",
+        "meshes": [
+          "right femur",
+          "left femur"
+        ],
+        "sub_region": "femoral neck (superoposterior octant highlight)",
+        "note": "no new mesh"
+      },
+      "hover": {
+        "title": "The thin top-back wall",
+        "summary": "Hip fractures start where the neck cortex is thinnest.",
+        "numbers": [
+          {
+            "text": "Women: superoposterior cortex −6.4% per decade",
+            "cite": "Mayhew 2005"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.compartment.xsec",
+      "label": "Shaft cross-section",
+      "notes_key": "compartments",
+      "mesh_binding": {
+        "source": "2D asset",
+        "asset": "figures/bone-volume/bone-volume-cortical-trabecular.png"
+      },
+      "hover": {
+        "title": "Shell vs sponge",
+        "summary": "TV = the box, BV = the bone in it, BV/TV = how full. Shell = Ct.V, sponge = Tb.V.",
+        "numbers": [
+          {
+            "text": "Skeleton ≈ 80% cortical / 20% trabecular",
+            "cite": "Clarke 2008"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.envelopes",
+      "label": "Periosteal vs endosteal",
+      "notes_key": "envelopes",
+      "mesh_binding": {
+        "source": "2D asset",
+        "asset": "figures/bone-volume/bone-volume-envelopes.gif"
+      },
+      "hover": {
+        "title": "Outside grows, inside hollows",
+        "summary": "Over life the outer surface creeps out while the inner wall is eaten away: wider tube, thinner wall.",
+        "numbers": [
+          {
+            "text": "Endocortical-adjacent remodelling = 47% of distal-radius loss",
+            "cite": "Zebaze 2010"
+          }
+        ]
+      }
+    }
+  ],
+  "laterality": [
+    {
+      "id": "bone.laterality.arms",
+      "label": "Arms · L/R",
+      "pair": [
+        "right humerus",
+        "left humerus",
+        "right radius",
+        "left radius"
+      ],
+      "hover": {
+        "title": "Arms lean right",
+        "summary": "Most people's right arm bones are a little wider. Over 10% is not rare. Mild asymmetry is normal, not disease.",
+        "numbers": [
+          {
+            "text": "Humeral midshaft breadth median %DA +2.98% (76% right-biased)",
+            "cite": "Auerbach & Ruff 2006"
+          },
+          {
+            "text": "Radial midshaft +2.21%",
+            "cite": "Auerbach & Ruff 2006"
+          },
+          {
+            "text": "Tennis playing arm: cortical area +12–32%, density ≈ same",
+            "cite": "Haapasalo 2000"
+          },
+          {
+            "text": "Throwers keep 55.5% of size benefit after 50+ y",
+            "cite": "Warden 2014"
+          }
+        ]
+      },
+      "asset": "figures/bone-volume/bone-volume-left-right.png"
+    },
+    {
+      "id": "bone.laterality.legs",
+      "label": "Legs · L/R",
+      "pair": [
+        "right femur",
+        "left femur",
+        "right tibia",
+        "left tibia"
+      ],
+      "hover": {
+        "title": "Legs nearly match",
+        "summary": "Leg bones are close to symmetric, with a tiny left tilt in shaft width.",
+        "numbers": [
+          {
+            "text": "Femur midshaft −0.49%, tibia −0.78% median %DA",
+            "cite": "Auerbach & Ruff 2006"
+          },
+          {
+            "text": "Length asymmetry median never >0.71% (~2.5 mm)",
+            "cite": "Auerbach & Ruff 2006"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bone.laterality.hips",
+      "label": "Hips · L/R DXA",
+      "pair": [
+        "right hip bone",
+        "left hip bone",
+        "right femur",
+        "left femur"
+      ],
+      "hover": {
+        "title": "Two hips, two scores",
+        "summary": "Hips agree closely on average, but over half of people differ by more than scanner noise.",
+        "numbers": [
+          {
+            "text": "r = 0.92–0.95; FN 0.859 L vs 0.865 R g/cm²",
+            "cite": "Mounach 2012"
+          },
+          {
+            "text": "7% of osteopenic-spine patients had one osteoporotic hip",
+            "cite": "Mounach 2012"
+          }
+        ]
+      }
+    }
+  ],
+  "sex_layer": {
+    "toggle": [
+      "female",
+      "male"
+    ],
+    "atlas": "slorksmo/Human-Atlas (male + female reference bodies); ashemag/human-atlas is male-only BodyParts3D",
+    "scope_note": "bone-metric sex differences only; reproductive anatomy owned by other themes",
+    "female": {
+      "summary": "Peak total-body bone mineral ≈ age 18. Ageing loses trabecular struts.",
+      "numbers": [
+        {
+          "text": "TB BMC plateau ≈ 18 y",
+          "cite": "Baxter-Jones 2011"
+        },
+        {
+          "text": "Tb.N −13%, Tb.Sp +24% (age 20→90, wrist)",
+          "cite": "Khosla 2006"
+        },
+        {
+          "text": "Central trabecular vBMD −55%; cortical vBMD ≈ −25%",
+          "cite": "Riggs 2004"
+        },
+        {
+          "text": "Humeral breadth %DA +2.29%",
+          "cite": "Auerbach & Ruff 2006"
+        }
+      ]
+    },
+    "male": {
+      "summary": "Peak ≈ age 20. Wider bones. Ageing mainly thins struts.",
+      "numbers": [
+        {
+          "text": "TB BMC plateau ≈ 20 y",
+          "cite": "Baxter-Jones 2011"
+        },
+        {
+          "text": "Bone areas 35–42% larger than young women",
+          "cite": "Riggs 2004"
+        },
+        {
+          "text": "Young-adult Tb BV/TV +26%, Tb.Th +28% vs women (wrist)",
+          "cite": "Khosla 2006"
+        },
+        {
+          "text": "Tb.Th −24% (age 20→90); central trabecular vBMD −46%; cortical ≈ −18%",
+          "cite": "Khosla 2006; Riggs 2004"
+        },
+        {
+          "text": "Humeral breadth %DA +3.35%",
+          "cite": "Auerbach & Ruff 2006"
+        }
+      ]
+    },
+    "both": [
+      {
+        "text": "≈39% of young-adult total-body BMC laid down in the 4 years around peak height velocity",
+        "cite": "Baxter-Jones 2011"
+      },
+      {
+        "text": "Tb BV/TV declines similarly: −27% W / −26% M",
+        "cite": "Khosla 2006"
+      }
+    ]
+  },
+  "gaps": [
+    "No per-third whole-bone Ct.V/Tb.V human table found; sector hovers use site ratios",
+    "Leg L/R values are caliper breadths, not volumes"
+  ]
+}

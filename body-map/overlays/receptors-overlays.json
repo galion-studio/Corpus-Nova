@@ -1,0 +1,1125 @@
+{
+  "version": 2,
+  "theme": "receptors",
+  "description": "Hover payloads for receptor layers on the body map: (1) receptors that shape human connection and (2) sex-steroid and HPG-axis receptors in brain, gonads and reproductive tracts. Universal-audience labels + exact receptor names. Content source: white-papers/receptors-human-connections.md (map-content source). Panel copy: body-map/overlays/receptors-sex-hormones-panel.md.",
+  "schema_notes": {
+    "sex": "'male' | 'female' | 'both' — which reference body shows the region",
+    "atlas_targets": "[{project, mesh_or_system_hint}] — where to pin the overlay in an existing atlas. Female mesh names were checked against slorksmo/Human-Atlas app/anatomy.ts (HRA female v1.10). BodyParts3D male mesh names marked 'confirm' must be checked against the viewer's /models/atlas.json.",
+    "hotspot": "true when the target is smaller than any available mesh (e.g. a brain nucleus, a cell type); render as a pin on the parent mesh",
+    "parent_region": "matches body-map/regions/index.md ids (head-neck, thorax, pelvis …)",
+    "layer": "one of the layers[] ids",
+    "sex_note": "optional, evidence-backed sex difference; see sources/receptors-sources.md"
+  },
+  "atlas_binding": {
+    "prefer": [
+      "ashemag/human-atlas (BodyParts3D 4.0 adult male; 15 systems; 2,234 meshes)",
+      "slorksmo/Human-Atlas (male BodyParts3D 4.0 + female HRA v1.10; has a 'brain' regions system)"
+    ],
+    "license_notes": "Keep BodyParts3D and HuBMAP HRA (CC BY 4.0) attribution. Do not redistribute meshes without a licence check.",
+    "rule": "Overlays and copy only — no new viewer, no new meshes."
+  },
+  "layers": [
+    {
+      "id": "receptors.connection",
+      "label": "Connection receptors (OXTR, AVPR, MOR, D2)",
+      "sex": "both"
+    },
+    {
+      "id": "receptors.sex-steroid",
+      "label": "Sex-steroid receptors (AR, ERα, ERβ, GPER1, PR)",
+      "sex": "both"
+    },
+    {
+      "id": "receptors.hpg-axis",
+      "label": "Brain–pituitary–gonad axis (KISS1R, GNRHR, LHCGR, FSHR)",
+      "sex": "both"
+    }
+  ],
+  "regions": [
+    {
+      "id": "brain.pvn",
+      "label": "Paraventricular hypothalamus",
+      "hover": {
+        "title": "Oxytocin & vasopressin hub",
+        "summary": "A small command loft that releases oxytocin and vasopressin — the messengers connection receptors hear.",
+        "receptors": [
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "hears oxytocin; care & bonding tone"
+          },
+          {
+            "id": "AVPR1A",
+            "plain": "Vasopressin receptor 1A",
+            "role": "social recognition / bond axis"
+          },
+          {
+            "id": "AVPR1B",
+            "plain": "Vasopressin receptor 1B",
+            "role": "stress–social crosstalk"
+          }
+        ],
+        "library": [
+          "library/receptors/oxtr.md",
+          "library/receptors/avpr1a.md"
+        ]
+      },
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.connection",
+      "hotspot": true,
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:nervous › brain (no nucleus-level mesh in BodyParts3D; place a hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:brain › 'hypothalamus' (PVN is a sub-part; hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "male edition (BodyParts3D 4.0) · system:nervous › brain (hotspot)"
+        }
+      ],
+      "sex_note": "Oxytocin and vasopressin systems differ by sex in region-specific ways, mostly shown in rodents (Dumais & Veenema 2016)."
+    },
+    {
+      "id": "brain.nacc",
+      "label": "Nucleus accumbens",
+      "hover": {
+        "title": "Social reward pocket",
+        "summary": "Where social cues get a ‘yes, again’ stamp — dopamine and opioid doors share the room.",
+        "receptors": [
+          {
+            "id": "DRD2",
+            "plain": "Dopamine D2 receptor",
+            "role": "reinforces valued social cues"
+          },
+          {
+            "id": "DRD3",
+            "plain": "Dopamine D3 receptor",
+            "role": "fine-tunes reward learning"
+          },
+          {
+            "id": "MOR",
+            "plain": "µ-opioid receptor",
+            "role": "warmth of affiliation; sting of loss"
+          },
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "bonds reward to social context"
+          }
+        ],
+        "library": [
+          "library/receptors/mor.md",
+          "library/receptors/oxtr.md",
+          "library/receptors/drd2.md"
+        ]
+      },
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.connection",
+      "hotspot": true,
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:nervous › brain (no nucleus-level mesh in BodyParts3D; place a hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:brain › nearest segmented striatum: 'putamen' (NAcc not segmented; hotspot)"
+        }
+      ],
+      "sex_note": "PET shows men and women can differ in µ-opioid activation here during pain (Zubieta et al. 2002)."
+    },
+    {
+      "id": "brain.amygdala",
+      "label": "Amygdala",
+      "hover": {
+        "title": "Social salience gate",
+        "summary": "Tags faces and situations as safe, special, or scary — receptors here tint the tag.",
+        "receptors": [
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "can soften threat bias in context"
+          },
+          {
+            "id": "AVPR1A",
+            "plain": "Vasopressin receptor 1A",
+            "role": "social memory & vigilance mix"
+          },
+          {
+            "id": "5HT1A",
+            "plain": "Serotonin 1A receptor",
+            "role": "anxiety tone around social cues"
+          }
+        ],
+        "library": [
+          "library/receptors/oxtr.md",
+          "library/receptors/avpr1a.md"
+        ]
+      },
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.connection",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:nervous › brain (no nucleus-level mesh in BodyParts3D; place a hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:brain › 'amygdaloid complex'"
+        }
+      ],
+      "sex_note": "Men and women differ in µ-opioid activation here during pain (Zubieta et al. 2002); OXTR/AVPR1A sex differences are region-specific (Dumais & Veenema 2016)."
+    },
+    {
+      "id": "brain.pfc",
+      "label": "Prefrontal cortex",
+      "hover": {
+        "title": "Story editor",
+        "summary": "Helps turn raw receptor chatter into choices — approach, comfort, or step back.",
+        "receptors": [
+          {
+            "id": "DRD2",
+            "plain": "Dopamine D2 receptor",
+            "role": "goal weighting for social acts"
+          },
+          {
+            "id": "5HT2A",
+            "plain": "Serotonin 2A receptor",
+            "role": "affect & meaning tone"
+          },
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "context-dependent (region-specific)"
+          }
+        ],
+        "library": [
+          "library/receptors/drd2.md"
+        ]
+      },
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.connection",
+      "hotspot": true,
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:nervous › brain (no nucleus-level mesh in BodyParts3D; place a hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:brain › 'brain hemisphere' (frontal pole; hotspot)"
+        }
+      ]
+    },
+    {
+      "id": "heart",
+      "label": "Heart",
+      "hover": {
+        "title": "Peripheral oxytocin ears",
+        "summary": "OXTR on heart and vessels means bonding chemistry is not brain-only — the body listens too.",
+        "receptors": [
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "peripheral partner to central bonding signals"
+          }
+        ],
+        "library": [
+          "library/receptors/oxtr.md"
+        ]
+      },
+      "sex": "both",
+      "parent_region": "thorax",
+      "layer": "receptors.connection",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:cardiac › 'heart'"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:cardiac › 'heart'"
+        }
+      ]
+    },
+    {
+      "id": "uterus",
+      "label": "Uterus",
+      "hover": {
+        "title": "Classic OXTR tissue",
+        "summary": "Famous for labor biology — a reminder that ‘connection receptors’ also run life’s practical scripts.",
+        "receptors": [
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "contraction signaling; textbook peripheral OXTR"
+          }
+        ],
+        "library": [
+          "library/receptors/oxtr.md",
+          "library/receptors/esr1.md",
+          "library/receptors/pgr.md"
+        ]
+      },
+      "sex": "female",
+      "parent_region": "pelvis",
+      "layer": "receptors.connection",
+      "atlas_targets": [
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:reproductive › 'uterus'"
+        }
+      ],
+      "sex_note": "Female map only. OXTR density in myometrium rises through pregnancy and peaks in early labor (Fuchs et al. 1982). See uterus.endometrium and uterus.myometrium for the steroid layer."
+    },
+    {
+      "id": "brain.vta",
+      "label": "Ventral tegmental area",
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.connection",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:nervous › brain (no nucleus-level mesh in BodyParts3D; place a hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:brain › nearest segmented midbrain: 'substantia nigra' (VTA sits medial; hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Dopamine launch pad",
+        "summary": "Sends dopamine to the reward pocket. Oxytocin can nudge it, so social moments feel worth repeating.",
+        "receptors": [
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "links social cues to dopamine release"
+          },
+          {
+            "id": "MOR",
+            "plain": "µ-opioid receptor",
+            "role": "opioids loosen the brake on dopamine cells"
+          }
+        ],
+        "library": [
+          "library/receptors/oxtr.md",
+          "library/receptors/mor.md",
+          "library/receptors/drd2.md"
+        ]
+      },
+      "hotspot": true
+    },
+    {
+      "id": "brain.ventral-pallidum",
+      "label": "Ventral pallidum",
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.connection",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:nervous › brain (no nucleus-level mesh in BodyParts3D; place a hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:brain › near 'putamen' (pallidum not separately segmented; hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Bond glue (in voles)",
+        "summary": "In prairie voles, vasopressin receptors here help a male prefer one partner. Human mapping is still indirect.",
+        "receptors": [
+          {
+            "id": "AVPR1A",
+            "plain": "Vasopressin receptor 1A",
+            "role": "partner preference in male voles"
+          },
+          {
+            "id": "MOR",
+            "plain": "µ-opioid receptor",
+            "role": "'liking' hotspot for rewards"
+          }
+        ],
+        "library": [
+          "library/receptors/avpr1a.md",
+          "library/receptors/mor.md"
+        ]
+      },
+      "hotspot": true
+    },
+    {
+      "id": "brain.dacc-insula",
+      "label": "Dorsal anterior cingulate & insula",
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.connection",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:nervous › brain (no nucleus-level mesh in BodyParts3D; place a hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:brain › 'brain hemisphere' (medial/insular cortex; hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Social-pain alarm",
+        "summary": "Being left out lights these up. µ-opioid tone helps set how much rejection hurts.",
+        "receptors": [
+          {
+            "id": "MOR",
+            "plain": "µ-opioid receptor",
+            "role": "buffers the sting of social pain"
+          }
+        ],
+        "library": [
+          "library/receptors/mor.md"
+        ]
+      },
+      "hotspot": true
+    },
+    {
+      "id": "brain.lateral-septum",
+      "label": "Lateral septum",
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.connection",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:nervous › brain (no nucleus-level mesh in BodyParts3D; place a hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:brain › near 'fornix' / 'corpus callosum' (septum not segmented; hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Who's who filter",
+        "summary": "Helps tell familiar from new. Vasopressin and oxytocin receptors here show sex differences in rodents.",
+        "receptors": [
+          {
+            "id": "AVPR1A",
+            "plain": "Vasopressin receptor 1A",
+            "role": "social recognition"
+          },
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "estrogen can raise OXTR here (rat)"
+          }
+        ],
+        "library": [
+          "library/receptors/avpr1a.md",
+          "library/receptors/oxtr.md",
+          "library/receptors/esr1.md"
+        ]
+      },
+      "hotspot": true,
+      "sex_note": "Rodent vasopressin fibres and receptor binding in the septum differ by sex (reviewed in Dumais & Veenema 2016)."
+    },
+    {
+      "id": "brain.mpoa",
+      "label": "Medial preoptic area",
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.sex-steroid",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:nervous › brain (no nucleus-level mesh in BodyParts3D; place a hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:brain › 'hypothalamus' (anterior edge; hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Care & mating switchboard",
+        "summary": "Steroid and oxytocin receptors meet here. In rats, mothers who lick their pups more carry more estrogen-boosted OXTR here.",
+        "receptors": [
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "turns up OXTR and care circuits"
+          },
+          {
+            "id": "AR",
+            "plain": "Androgen receptor",
+            "role": "male-typical behaviour circuits"
+          },
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "maternal care in rats"
+          }
+        ],
+        "library": [
+          "library/receptors/esr1.md",
+          "library/receptors/ar.md",
+          "library/receptors/oxtr.md"
+        ]
+      },
+      "hotspot": true,
+      "sex_note": "Estrogen-inducible OXTR binding here tracks maternal care in female rats (Champagne et al. 2001)."
+    },
+    {
+      "id": "brain.hypothalamus.kiss-gnrh",
+      "label": "Hypothalamus · kisspeptin → GnRH neurons",
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.hpg-axis",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:nervous › brain (no nucleus-level mesh in BodyParts3D; place a hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:brain › 'hypothalamus'"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "male edition (BodyParts3D 4.0) · system:nervous › brain (hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Puberty ignition",
+        "summary": "Kisspeptin knocks on KISS1R on GnRH cells. They fire in pulses. No working KISS1R, no puberty.",
+        "receptors": [
+          {
+            "id": "KISS1R",
+            "plain": "Kisspeptin receptor (GPR54)",
+            "role": "starts and paces GnRH pulses"
+          },
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "steroid feedback to the hypothalamus"
+          },
+          {
+            "id": "AR",
+            "plain": "Androgen receptor",
+            "role": "testosterone feedback"
+          }
+        ],
+        "library": [
+          "library/receptors/gnrhr.md",
+          "library/receptors/testosterone-production.md",
+          "library/receptors/esr1.md",
+          "library/receptors/ar.md"
+        ]
+      },
+      "hotspot": true,
+      "sex_note": "Same receptors in both sexes. Females add a mid-cycle positive-feedback surge; males keep steadier pulses."
+    },
+    {
+      "id": "pituitary.anterior",
+      "label": "Anterior pituitary · gonadotropes",
+      "sex": "both",
+      "parent_region": "head-neck",
+      "layer": "receptors.hpg-axis",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:endocrine › 'pituitary gland' (BodyParts3D name; confirm in atlas.json)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "male edition (BodyParts3D 4.0) · system:endocrine › pituitary gland"
+        }
+      ],
+      "hover": {
+        "title": "LH & FSH factory",
+        "summary": "GnRH pulses hit GNRHR. Gonadotrope cells answer with LH and FSH. Constant GnRH shuts them down.",
+        "receptors": [
+          {
+            "id": "GNRHR",
+            "plain": "GnRH receptor",
+            "role": "Gq → Ca²⁺ → LH/FSH release"
+          },
+          {
+            "id": "AVPR1B",
+            "plain": "Vasopressin receptor 1B",
+            "role": "(corticotropes) stress axis — same gland, other cells"
+          },
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "steroid feedback"
+          }
+        ],
+        "library": [
+          "library/receptors/gnrhr.md",
+          "library/receptors/lhcgr.md",
+          "library/receptors/fshr.md"
+        ]
+      }
+    },
+    {
+      "id": "testis.leydig",
+      "label": "Testis · Leydig cells",
+      "sex": "male",
+      "parent_region": "pelvis",
+      "layer": "receptors.hpg-axis",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:reproductive › 'testis' (interstitial cells are not meshed; hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "male edition (BodyParts3D 4.0) · system:reproductive › testis"
+        }
+      ],
+      "hover": {
+        "title": "Testosterone kitchen",
+        "summary": "LH docks on LHCGR. cAMP rises. Cholesterol moves into mitochondria and becomes testosterone.",
+        "receptors": [
+          {
+            "id": "LHCGR",
+            "plain": "LH/hCG receptor",
+            "role": "Gs → cAMP → steroid making"
+          },
+          {
+            "id": "AR",
+            "plain": "Androgen receptor",
+            "role": "local androgen feedback"
+          }
+        ],
+        "library": [
+          "library/receptors/lhcgr.md",
+          "library/receptors/testosterone-production.md",
+          "library/receptors/ar.md"
+        ]
+      },
+      "hotspot": true
+    },
+    {
+      "id": "testis.sertoli",
+      "label": "Testis · Sertoli cells",
+      "sex": "male",
+      "parent_region": "pelvis",
+      "layer": "receptors.hpg-axis",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:reproductive › 'testis' (seminiferous tubules; hotspot)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "male edition (BodyParts3D 4.0) · system:reproductive › testis"
+        }
+      ],
+      "hover": {
+        "title": "Sperm nursery staff",
+        "summary": "Sertoli cells carry FSHR and AR. Testosterone acts through their AR — not the sperm's — to finish meiosis.",
+        "receptors": [
+          {
+            "id": "FSHR",
+            "plain": "FSH receptor",
+            "role": "Gs → cAMP; supports sperm output"
+          },
+          {
+            "id": "AR",
+            "plain": "Androgen receptor",
+            "role": "needed for meiosis to finish (mouse SCARKO)"
+          }
+        ],
+        "library": [
+          "library/receptors/fshr.md",
+          "library/receptors/ar.md",
+          "library/receptors/testosterone-production.md"
+        ]
+      },
+      "hotspot": true
+    },
+    {
+      "id": "epididymis",
+      "label": "Epididymis & efferent ducts",
+      "sex": "male",
+      "parent_region": "pelvis",
+      "layer": "receptors.sex-steroid",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:reproductive › 'epididymis' (confirm name)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "male edition (BodyParts3D 4.0) · system:reproductive › epididymis"
+        }
+      ],
+      "hover": {
+        "title": "Sperm finishing school",
+        "summary": "A 'female' hormone at work in males: ERα in the efferent ducts soaks up fluid so sperm leave concentrated.",
+        "receptors": [
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "fluid reabsorption in efferent ducts"
+          },
+          {
+            "id": "AR",
+            "plain": "Androgen receptor",
+            "role": "keeps epididymal lining working"
+          }
+        ],
+        "library": [
+          "library/receptors/esr1.md",
+          "library/receptors/ar.md"
+        ]
+      }
+    },
+    {
+      "id": "prostate",
+      "label": "Prostate",
+      "sex": "male",
+      "parent_region": "pelvis",
+      "layer": "receptors.sex-steroid",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:reproductive › 'prostate'"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "male edition (BodyParts3D 4.0) · system:reproductive › prostate"
+        }
+      ],
+      "hover": {
+        "title": "Androgen-loving gland",
+        "summary": "Converts testosterone to stronger DHT and listens hard through AR. ERβ was first cloned from this gland (rat).",
+        "receptors": [
+          {
+            "id": "AR",
+            "plain": "Androgen receptor",
+            "role": "growth and secretion (DHT-driven)"
+          },
+          {
+            "id": "ESR2",
+            "plain": "Estrogen receptor β",
+            "role": "epithelial brake/partner"
+          },
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "stromal estrogen signalling"
+          }
+        ],
+        "library": [
+          "library/receptors/ar.md",
+          "library/receptors/esr2.md",
+          "library/receptors/esr1.md"
+        ]
+      }
+    },
+    {
+      "id": "seminal-vesicle",
+      "label": "Seminal vesicles",
+      "sex": "male",
+      "parent_region": "pelvis",
+      "layer": "receptors.sex-steroid",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:reproductive › 'seminal vesicle' (confirm name)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "male edition (BodyParts3D 4.0) · system:reproductive › seminal vesicle"
+        }
+      ],
+      "hover": {
+        "title": "Fluid factory",
+        "summary": "Makes most of the semen fluid. Size and output depend on androgen signalling through AR.",
+        "receptors": [
+          {
+            "id": "AR",
+            "plain": "Androgen receptor",
+            "role": "keeps secretory lining active"
+          }
+        ],
+        "library": [
+          "library/receptors/ar.md"
+        ]
+      }
+    },
+    {
+      "id": "penis.corpus-cavernosum",
+      "label": "Penis · erectile tissue",
+      "sex": "male",
+      "parent_region": "pelvis",
+      "layer": "receptors.sex-steroid",
+      "atlas_targets": [
+        {
+          "project": "ashemag/human-atlas",
+          "mesh_or_system_hint": "system:reproductive › 'corpus cavernosum of penis' (confirm name)"
+        },
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "male edition (BodyParts3D 4.0) · system:reproductive › penis"
+        }
+      ],
+      "hover": {
+        "title": "Blood-flow switch",
+        "summary": "Nerves release NO. Its receptor, soluble guanylyl cyclase, makes cGMP and relaxes smooth muscle. α1-adrenoceptors keep it soft at rest.",
+        "receptors": [
+          {
+            "id": "GUCY1 (sGC)",
+            "plain": "Soluble guanylyl cyclase — the NO receptor",
+            "role": "cGMP → relaxation → erection"
+          },
+          {
+            "id": "ADRA1",
+            "plain": "α1-adrenoceptors",
+            "role": "noradrenaline keeps tissue contracted (flaccid)"
+          },
+          {
+            "id": "AR",
+            "plain": "Androgen receptor",
+            "role": "androgens support erectile tissue"
+          }
+        ],
+        "library": [
+          "library/receptors/ar.md"
+        ]
+      },
+      "sex_note": "Receptor-exact only: PDE5 is an enzyme that breaks cGMP, not a receptor (Andersson 2011)."
+    },
+    {
+      "id": "ovary.follicle.granulosa",
+      "label": "Ovary · granulosa cells",
+      "sex": "female",
+      "parent_region": "pelvis",
+      "layer": "receptors.hpg-axis",
+      "atlas_targets": [
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:reproductive › 'ovary' (follicles not meshed; hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Estrogen finishers",
+        "summary": "FSH via FSHR switches on aromatase. They turn the theca's androgens into estradiol. Late in the cycle they gain LHCGR too.",
+        "receptors": [
+          {
+            "id": "FSHR",
+            "plain": "FSH receptor",
+            "role": "follicle growth; aromatase on"
+          },
+          {
+            "id": "LHCGR",
+            "plain": "LH/hCG receptor",
+            "role": "ovulation trigger (pre-ovulatory)"
+          },
+          {
+            "id": "ESR2",
+            "plain": "Estrogen receptor β",
+            "role": "granulosa estrogen signalling"
+          },
+          {
+            "id": "PGR",
+            "plain": "Progesterone receptor",
+            "role": "induced by LH surge; needed for ovulation (PR-A, mouse)"
+          }
+        ],
+        "library": [
+          "library/receptors/fshr.md",
+          "library/receptors/lhcgr.md",
+          "library/receptors/esr2.md",
+          "library/receptors/pgr.md"
+        ]
+      },
+      "hotspot": true
+    },
+    {
+      "id": "ovary.follicle.theca",
+      "label": "Ovary · theca cells",
+      "sex": "female",
+      "parent_region": "pelvis",
+      "layer": "receptors.hpg-axis",
+      "atlas_targets": [
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:reproductive › 'ovary' (hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Androgen makers in the ovary",
+        "summary": "LH via LHCGR makes theca cells produce androgens — the raw material for estrogen. Yes, ovaries make androgens.",
+        "receptors": [
+          {
+            "id": "LHCGR",
+            "plain": "LH/hCG receptor",
+            "role": "androgen synthesis"
+          },
+          {
+            "id": "AR",
+            "plain": "Androgen receptor",
+            "role": "early follicle growth"
+          }
+        ],
+        "library": [
+          "library/receptors/lhcgr.md",
+          "library/receptors/ar.md",
+          "library/receptors/testosterone-production.md"
+        ]
+      },
+      "hotspot": true
+    },
+    {
+      "id": "ovary.corpus-luteum",
+      "label": "Ovary · corpus luteum",
+      "sex": "female",
+      "parent_region": "pelvis",
+      "layer": "receptors.hpg-axis",
+      "atlas_targets": [
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:reproductive › 'ovary' (hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Progesterone pop-up gland",
+        "summary": "After ovulation the follicle becomes a temporary gland. LH — or hCG in early pregnancy — keeps it making progesterone.",
+        "receptors": [
+          {
+            "id": "LHCGR",
+            "plain": "LH/hCG receptor",
+            "role": "keeps progesterone flowing; hCG rescue in pregnancy"
+          }
+        ],
+        "library": [
+          "library/receptors/lhcgr.md",
+          "library/receptors/pgr.md"
+        ]
+      },
+      "hotspot": true
+    },
+    {
+      "id": "fallopian-tube",
+      "label": "Fallopian (uterine) tube",
+      "sex": "female",
+      "parent_region": "pelvis",
+      "layer": "receptors.sex-steroid",
+      "atlas_targets": [
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:reproductive › 'fallopian tube'"
+        }
+      ],
+      "hover": {
+        "title": "Egg's escalator",
+        "summary": "Steroid receptors tune the beating hairs and muscle that move the egg toward the uterus.",
+        "receptors": [
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "epithelial tone and secretion"
+          },
+          {
+            "id": "PGR",
+            "plain": "Progesterone receptor",
+            "role": "transport timing"
+          }
+        ],
+        "library": [
+          "library/receptors/esr1.md",
+          "library/receptors/pgr.md"
+        ]
+      }
+    },
+    {
+      "id": "uterus.endometrium",
+      "label": "Uterus · endometrium (lining)",
+      "sex": "female",
+      "parent_region": "pelvis",
+      "layer": "receptors.sex-steroid",
+      "atlas_targets": [
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:reproductive › 'uterus' (inner layer; hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Monthly rebuild",
+        "summary": "Estrogen via ERα grows the lining. Progesterone via PR makes it ready to host an embryo.",
+        "receptors": [
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "proliferation"
+          },
+          {
+            "id": "PGR",
+            "plain": "Progesterone receptor (PR-A/PR-B)",
+            "role": "implantation readiness; PR-A essential in mouse"
+          },
+          {
+            "id": "GPER1",
+            "plain": "G-protein estrogen receptor",
+            "role": "fast estrogen signals"
+          }
+        ],
+        "library": [
+          "library/receptors/esr1.md",
+          "library/receptors/pgr.md",
+          "library/receptors/gper1.md"
+        ]
+      },
+      "hotspot": true
+    },
+    {
+      "id": "uterus.myometrium",
+      "label": "Uterus · myometrium (muscle)",
+      "sex": "female",
+      "parent_region": "pelvis",
+      "layer": "receptors.connection",
+      "atlas_targets": [
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:reproductive › 'uterus' (muscle wall; hotspot)"
+        }
+      ],
+      "hover": {
+        "title": "Labor engine",
+        "summary": "OXTR numbers climb through pregnancy and peak in early labor. Progesterone keeps the muscle calm until then.",
+        "receptors": [
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "contractions; density peaks at labor"
+          },
+          {
+            "id": "PGR",
+            "plain": "Progesterone receptor",
+            "role": "quiets muscle in pregnancy"
+          },
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "raises contraction readiness"
+          }
+        ],
+        "library": [
+          "library/receptors/oxtr.md",
+          "library/receptors/pgr.md",
+          "library/receptors/esr1.md"
+        ]
+      },
+      "hotspot": true
+    },
+    {
+      "id": "cervix",
+      "label": "Cervix",
+      "sex": "female",
+      "parent_region": "pelvis",
+      "layer": "receptors.sex-steroid",
+      "atlas_targets": [
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:reproductive › 'cervix'"
+        }
+      ],
+      "hover": {
+        "title": "The gatekeeper",
+        "summary": "Estrogen and progesterone flip its mucus between 'come in' (thin) and 'stay out' (thick).",
+        "receptors": [
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "thin, sperm-friendly mucus"
+          },
+          {
+            "id": "PGR",
+            "plain": "Progesterone receptor",
+            "role": "thick, closed-gate mucus"
+          }
+        ],
+        "library": [
+          "library/receptors/esr1.md",
+          "library/receptors/pgr.md"
+        ]
+      }
+    },
+    {
+      "id": "vagina",
+      "label": "Vagina",
+      "sex": "female",
+      "parent_region": "pelvis",
+      "layer": "receptors.sex-steroid",
+      "atlas_targets": [
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:reproductive › 'vagina'"
+        }
+      ],
+      "hover": {
+        "title": "Estrogen-fed lining",
+        "summary": "ERα keeps the lining thick and moist. Low estrogen after menopause thins it.",
+        "receptors": [
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "epithelial thickness and moisture"
+          }
+        ],
+        "library": [
+          "library/receptors/esr1.md"
+        ]
+      }
+    },
+    {
+      "id": "breast",
+      "label": "Breast · mammary gland",
+      "sex": "female",
+      "parent_region": "thorax",
+      "layer": "receptors.sex-steroid",
+      "atlas_targets": [
+        {
+          "project": "slorksmo/Human-Atlas",
+          "mesh_or_system_hint": "female edition (HRA female v1.10) · system:integumentary/reproductive › 'mammary gland', 'mammary lobes', 'main lactiferous ducts', 'nipple'"
+        }
+      ],
+      "hover": {
+        "title": "Grow, branch, deliver",
+        "summary": "ERα grows the ducts. PR-B branches them in pregnancy. OXTR squeezes milk out when a baby suckles.",
+        "receptors": [
+          {
+            "id": "ESR1",
+            "plain": "Estrogen receptor α",
+            "role": "duct growth"
+          },
+          {
+            "id": "PGR",
+            "plain": "Progesterone receptor (PR-B)",
+            "role": "side branches and milk lobules"
+          },
+          {
+            "id": "OXTR",
+            "plain": "Oxytocin receptor",
+            "role": "milk let-down (myoepithelial squeeze)"
+          }
+        ],
+        "library": [
+          "library/receptors/esr1.md",
+          "library/receptors/pgr.md",
+          "library/receptors/oxtr.md"
+        ]
+      },
+      "sex_note": "Males have breast tissue with the same receptors; it stays small unless the estrogen/androgen balance shifts."
+    }
+  ]
+}
