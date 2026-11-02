@@ -83,3 +83,6 @@ All graphics: simple, clean, no UI chrome, transparent backgrounds for PNGs.
 
 ## Next step
 Full draft: `white-papers/bone-volume-sectors-laterality.md` + figures + sources.
+
+---
+**License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.

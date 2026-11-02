@@ -1,11 +1,18 @@
-# How Fat Is Built
-### From meal to lipid droplet
+![Corpus Nova](../figures/branding/cn-paper-header.png)
 
-*Theme 5 · Adipose tissue · Paper 01 · Map-first content source*
-*Audience: universal · Depth: PhD-worthy · Voice: abstract, easy, fun, simple*
+# How Fat Is Built
+
+*From meal to lipid droplet · Adipose tissue · Paper 01 · Map-first content source*
+
+---
+**Corpus Nova** · Theme 5 · Universal readers · PhD-worthy depth · Voice: alien-technology minimal · **License:** MIT · 2026-11-01
+
+---
 
 **Feeds:** `body-map/overlays/adipose-depots.json` · `body-map/adipose-regions.md` · `library/adipose-metabolism/`  
 **Does not build:** 3D viewers (reuse open atlases — `notes/github-anatomy-landscape.md`).
+
+## Abstract
 
 > Energy that doesn't leave the body has to live somewhere. Fat is where it lives: a dense, tidy, reversible archive. This paper follows one lunch from your plate into a fat cell, then asks how the body decides to make *new* fat cells or just fill the old ones, and why some fat stores fuel while other fat burns it as heat.
 
@@ -230,3 +237,6 @@ Full citations, DOIs, and why each one matters: [`../sources/adipose-01-sources.
 - Fox et al. (2007) *Circulation*. Visceral vs subcutaneous fat and metabolic risk.
 - Karastergiou et al. (2012) *Biol Sex Differ*. Sex differences / biology of pear shape.
 - Frank, Palmer & Clegg (2019) *J Lipid Res*. Determinants of body fat distribution (sex hormones).
+
+---
+**License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.

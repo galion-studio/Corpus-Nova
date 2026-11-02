@@ -56,3 +56,6 @@ Do **not** reinvent viewers or meshes. Prefer these existing projects/datasets.
 2. Pull mesh/data attribution carefully (BodyParts3D / HRA / Z-Anatomy licenses).
 3. Inject our `body-map/` + `library/` payloads (incl. sex hormones & reproductive systems) as panel content from white-paper streams.
 4. Use **open-anatomy-studio** hotspot/lesson patterns for paper→map content binding.
+
+## Decision (Whole Body, 2026-11-01)
+Primary viewer: **slorksmo/Human-Atlas** (male BodyParts3D + female HRA, MIT, stable `FJ`/`HRAF` mesh IDs); **ashemag/human-atlas** = upstream/male-only fallback; **open-anatomy-studio** = content-contract pattern only; **Z-Anatomy** = reference only (CC BY-SA). Full table, injection steps, and attribution: `body-map/README.md`.

@@ -1,5 +1,13 @@
+![Corpus Nova](../figures/branding/cn-paper-header.png)
+
 # Bone Volume, Room by Room: Sectors, Sides, and Sexes
 
+*Full draft v1 · Human Anatomy & Biology · how bone volume varies by sector, side, and sex*
+
+---
+**Corpus Nova** · Theme 4 · Universal readers · PhD-worthy depth · Voice: alien-technology minimal · **License:** MIT · 2026-11-01
+
+---
 **Theme 4 · Human Anatomy & Biology** · full draft v1 · 2026-11-01
 **Audience:** universal (anyone curious about the real body). Accurate enough for specialists, but no stiff paper tone.
 **Feeds:** body map overlays (`body-map/overlays/bone-volume-overlays.json`, `body-map/bone-volume-hover-notes.md`) and the library (`library/bone-metrics/`).
@@ -234,3 +242,6 @@ Here we cover bone numbers only. Hormones and the reproductive system are covere
 ## 8. References
 Full list with DOIs: `sources/bone-volume-sources.md`.
 Auerbach & Ruff 2006 · Bass et al. 2002 · Baxter-Jones et al. 2011 · Bouxsein et al. 2010 · Carter, Bouxsein & Marcus 1992 · Clarke 2008 · Dempster et al. 2013 · Eswaran et al. 2006 · Haapasalo et al. 2000 · Hwang et al. 2012 · Khosla et al. 2006 · Mayhew et al. 2005 · Mounach et al. 2012 · Riggs et al. 2004 · Roy, Ruff & Plato 1994 (secondary) · Ruff & Hayes 1982 · Warden et al. 2014 · Zebaze et al. 2010.
+
+---
+**License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.

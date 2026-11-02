@@ -19,3 +19,6 @@ Open-source, VR-ready human-organism explorer: interactive body map + universal 
 
 ## Eureka log
 See `notes/eureka-findings.md`
+
+## License
+MIT — see `/LICENSE`. Branding: `notes/branding/STYLE.md`.
