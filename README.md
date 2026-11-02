@@ -65,6 +65,11 @@ Hormones & chemistry; receptors; testosterone levels & testicular production; fu
 ### Food & energy systems
 Gut, stomach, acids, microbiome, intestine segments, sphincters, digestion, lactose intolerance, fermented reintroduction, microbiome ↔ immunity/mood, evolutionary base of *Homo sapiens*.
 
+- Paper: [The Gut as a Reactor](white-papers/food-energy-01-gut-as-reactor.md)
+
+### Homo Origins
+- Paper: [Why We Run on This Hardware](white-papers/homo-origins-01-why-we-run-on-this-hardware.md)
+
 ### Technical foundation
 - **Rust** core (3D environments, rendering integration, systems)
 - **NVIDIA** path: CUDA / RTX / DLSS where they earn speed and quality

@@ -198,7 +198,7 @@ About 95% of a man's testosterone comes from **Leydig cells**, small cells packe
 
 The numbers:
 - **Output:** about 5–7 mg of testosterone per day. Isotope-tracer estimates range from about 3 to 10 mg/day. Roughly 4% becomes DHT and about 0.2% becomes estradiol (Handelsman 2026).
-- **A steep local gradient.** Testosterone inside the testis runs about **40–100×** higher than in blood (Coviello et al. 2004; Jarow & Zirkin 2005). Sperm production needs that local flood, which is why testosterone taken as a drug, by switching off LH, can *lower* sperm counts. It's Section 1's idea again: a gradient held up on purpose.
+- **A steep local gradient.** Testosterone inside the testis runs about **40–100×** higher than in blood (Coviello et al. 2004; Jarow & Zirkin 2005). Sperm production needs that local flood, which is why testosterone taken as a drug, by switching off LH, can *lower* sperm counts. It's Section 1's idea again: a gradient held up on purpose. (Measured ITT values: Capacity panel §9.2 and `library/capacities/intratesticular-testosterone.md`.)
 - **Circulating range:** in healthy, non-obese men aged 19–39, the harmonized range is **264–916 ng/dL** (about 9.2–31.8 nmol/L), with a median near 530 ng/dL (Travison et al. 2017). A mass-spectrometry range from another review is 7.7–29.4 nmol/L (Handelsman et al. 2018).
 - **Daily rhythm:** in men aged 30–40, levels at 4 p.m. are **20–25% lower** than at 8 a.m. The swing shrinks to about 10% by age 70, which is why testosterone tests are done in the morning (Brambilla et al. 2009).
 - **Feedback:** testosterone, and the estradiol made from it, signal back to the brain and pituitary to slow GnRH and LH. That makes a steady **negative-feedback** loop with a daily ripple.
@@ -250,6 +250,32 @@ Tissues don't just receive hormones. They **remake** them.
 
 **Takeaway:** sex-steroid chemistry is one shared pathway with tissue-specific dial settings, gated at one mitochondrial step, carried mostly on proteins, and rebuilt locally. Anatomy of the organs is in **Whole Body** (Theme 6). The receptors that read these molecules are in **Receptors** (Theme 3).
 
+### 7.8 The adrenal branch: cortisol and the stress axis
+
+The same cholesterol gate (§7.1) feeds a third factory, the **adrenal cortex**. Its middle layer, the **zona fasciculata**, makes **cortisol**, the body's main glucocorticoid. The command chain matches the gonads' chain with different parts. The hypothalamus releases **CRH** together with vasopressin. The pituitary answers with **ACTH**, a 39-amino-acid fragment cut from the POMC precursor. ACTH binds **MC2R**, a receptor that only works with its helper protein **MRAP**, and it pushes the "first and rate-limiting step," cholesterol → pregnenolone (Lim & Khoo, Endotext; Angelousi et al., Endotext). After the gate the adrenal takes its own branch: pregnenolone → 17α-OH-pregnenolone (**CYP17A1**, 17α-hydroxylase) → 17α-OH-progesterone (**3β-HSD2**) → 11-deoxycortisol (**CYP21A2**) → **cortisol**. The last step is **CYP11B1** (11β-hydroxylase), which works back inside the mitochondria (Nicolaides et al., Endotext). Output is about **9.9 ± 2.7 mg/day** by stable-isotope dilution (Esteban et al. 1991), the same order as a man's ~5–7 mg of testosterone (§7.3).
+
+**A clock with pulses on top.** ACTH comes in about **40 pulses a day**, and cortisol follows each one about 15 minutes later. The daily wave comes from bigger pulses, not more of them (Lim & Khoo). In 33 healthy adults, total serum cortisol peaked at **15.5 µg/dL** (95% reference 11.7–20.6, ≈ 430 nmol/L) at about **08:30**. It fell to a nadir **below 2 µg/dL** (1.5–2.5) around **00:20**, and stayed quiet from roughly 19:45 to 05:30 (Debono et al. 2009). The peak-to-trough ratio is therefore roughly **8-fold**. On top of that, waking itself adds a burst: salivary free cortisol rises **50–75% within 30 minutes** of waking (Pruessner et al. 1997; Stalder et al. 2016). Sex and age move the curve. Premenopausal women average **176** vs **217 nmol/L** in men over 24 h, a gap that disappears after 50, even though total daily secretion is the same (Roelfsema et al. 2017). Aging lifts night-time cortisol and moves the peak earlier (Roelfsema 2017; Deuschle et al. 1997). For engineers, the HPA axis is an oscillator, not a set point (Lightman & Conway-Campbell 2010).
+
+**Riding in the blood: CBG plays SHBG's role.** Like testosterone (§7.6), cortisol travels mostly bound. **CBG** (corticosteroid-binding globulin) holds about **80–90%**, albumin about **10–15%**, and only about **3–6%** is free (Lewis et al. 2005; Choi 2022). If CBG is missing, the free share jumps to about **25–32%** (Lewis 2005). CBG rises with estrogen and pregnancy (Babic et al., Endotext). Neutrophil elastase cuts CBG at inflamed sites and releases its cortisol at those sites (Perogamvros et al. 2012). It's the same lesson as SHBG: **a total-cortisol number can shift without the free number changing.** Unbound cortisol is filtered into urine unchanged. By LC-MS/MS, 24-h urine free cortisol reference intervals are **11–70 µg/day** (Bianchi et al. 2019) or **7.0–45.7 µg/day** (Song et al. 2024), depending on the lab and population (El-Farhan et al. 2017).
+
+> **Map callout · `mind.adrenal.cortisol` (abdomen.adrenal → brain).** Cortisol is the chemical half of the Mind sector's stress layer. In the brain it is read by two receptors, the high-affinity MR and the lower-affinity GR. GR fills mainly at the morning peak and under stress (rat data, Reul & de Kloet 1985; receptor depth → **Receptors**). In people, cortisone given before a delayed recall test impaired *retrieval* of a word list (de Quervain et al. 2000). A month of real-life stress reversibly weakened PFC-based attentional control (Liston et al. 2009). The structural findings, such as PFC dendrite retraction, are mostly from rats (Radley et al. 2006). Brain cards: `library/mind/cortisol-brain-effects.md`. Numbers mirror: `notes/stress-axis-cortisol.md`.
+
+**Takeaway:** cortisol is the third output of one cholesterol gate. It is made on demand from an ACTH clock, carried on CBG the way testosterone rides on SHBG, and read by a brain that it also feeds back into. HPA anatomy is in **Whole Body**. MR/GR detail is in **Receptors**. What stress means psychologically is in **Mind**.
+
+### 7.9 Local clearance: 11β-HSD2 at the kidney
+
+**The puzzle.** The kidney's salt receptor, the mineralocorticoid receptor (MR), grips aldosterone and cortisol about equally hard. Human MR has a Kd of about **0.5 nM** for both (Chapman et al. 2013, citing Arriza et al. 1987). In rat tissue, MR "does not distinguish between aldosterone and cortisol" (Edwards et al. 1988). Cortisol, meanwhile, circulates at about **1000×** aldosterone's total level and about **100×** its free level (Funder 2017, review). By binding alone, cortisol should own the lock.
+
+**The fix is an enzyme, not a pickier receptor** (Funder et al. 1988). Cells of the distal nephron express **11β-hydroxysteroid dehydrogenase type 2** (*HSD11B2*). It oxidizes cortisol's 11β-OH to a ketone, making **cortisol + NAD⁺ → cortisone + NADH** (C₂₁H₃₀O₅ → C₂₁H₂₈O₅). Cortisone cannot bind MR, and aldosterone is not a substrate (Funder 1988). The human enzyme is NAD⁺-dependent and runs only as a dehydrogenase. Its Km for cortisol is **47 nM** (Albiston et al. 1994) or **43.9 ± 8.5 nM** (Brown et al. 1996), and for corticosterone it is 5.1 nM or 12.4 ± 1.5 nM. Funder (2017) estimates that this "debulks" cortisol about **10×**. That still leaves about 10× excess, so most MRs end up occupied but not activated by cortisol. Chapman et al. (2013) point out that the enzyme's affinity is more than an order of magnitude weaker than the receptor's and call this an "unresolved paradox." Even so, co-expression is enough to block glucocorticoid activation of MR in cell models.
+
+**Where it stands.** In human kidney, immunostaining is strongest in cortical distal convoluted tubules and collecting ducts (Krozowski et al. 1995; Shimojo et al. 1997), and the enzyme sits in the ER (Kataoka et al. 2002). In rat kidney it runs from the DCT through the connecting tubule into collecting-duct principal cells, side by side with MR (Bostanjoglo et al. 1998). Its mirror twin, **11β-HSD1**, mostly works in reverse (NADPH; cortisone → cortisol) at micromolar Km (10–50 µM for cortisol). It sits in the kidney's *proximal* tubule and in liver, fat and brain (Chapman 2013). So one pair of molecules is switched **off** at the salt lock and **on** elsewhere. This is prereceptor control (Choi 2022).
+
+**Evidence that the chemistry matters.** Inherited loss-of-function mutations in *HSD11B2* "permit cortisol to occupy the renal mineralocorticoid receptor" (apparent mineralocorticoid excess; Mune et al. 1995; Wilson et al. 1995). The R337C mutant's Km in intact cells rises from 110 nM to 1010 nM (Obeyesekere et al. 1995). In *Hsd11b2* knockout mice, corticosterone gains mineralocorticoid activity (Kotelevtsev et al. 1999). In normal urine, free cortisone exceeds free cortisol: UFF:UFE is **0.17–0.56** by LC-MS/MS (Song et al. 2024) and 0.54 ± 0.3 by GC/MS (Palermo et al. 2001). This is a chemistry window, assay-specific and still being validated as a kidney-specific readout (Chapman 2013). It is not a test recommendation.
+
+> **Map callout · `abdomen.kidney` (abdomen.adrenal → kidney).** Cortisol made in §7.8 is partly retired here. Payload: `body-map/regions/kidney-hsd2-chemistry.md`. Numbers mirror: `notes/kidney-mr-11b-hsd2.md`. Card: `library/hormones/11b-hsd2-kidney-mr.md`. MR itself → **Receptors** (`library/receptors/mr.md`).
+
+**Takeaway:** a receptor can't tell two keys apart, so the cell edits one key. The enzyme takes two hydrogens off cortisol, the lock is left listening for aldosterone, and urine shows that the edit happened. UNSOURCED this pass: human plasma aldosterone levels, the enzyme : receptor ratio per cell, Vmax/kcat, and the structural reason aldosterone escapes.
+
 ---
 
 ## 8. What real life changes compared with the textbook
@@ -286,6 +312,8 @@ The project's interactive body map is the main product, and this paper supplies 
 | Heart (and working muscle) | `body-map/regions/heart-metabolic-chemistry.md` | §3 ATP, creatine phosphate, lactate |
 | Testis | `body-map/regions/gonads-male-chemistry.md` | §7.1–7.3, §7.7 |
 | Ovary | `body-map/regions/gonads-female-chemistry.md` | §7.1–7.2, §7.4–7.5 |
+| Adrenal (cortisol) | `body-map/regions/adrenal-cortisol-chemistry.md` | §7.1, §7.8 |
+| Kidney (11β-HSD2) | `body-map/regions/kidney-hsd2-chemistry.md` | §7.8, §7.9 |
 | Library cards | `library/biology-chemistry/`, `library/hormones/`, `library/male-reproductive/`, `library/female-reproductive/` | all sections |
 
 Male and female layers are written in parallel, with the same depth and the same card fields, so the map can toggle between them without one looking like an afterthought.
@@ -294,11 +322,23 @@ Male and female layers are written in parallel, with the same depth and the same
 
 One last image to keep: you aren't a finished mixture. You're a chemical gradient that's still running, kept going by roughly 70 kg of ATP turnover a day, and steered in part by a handful of milligrams of steroid hormone made fresh each day from cholesterol.
 
+### 9.2 Capacity panels: chemistry as volume
+
+The map's Capacities layer shows a number first. These four panels give the chemistry above a size. Full cards are in `library/capacities/`, the map-citeable mirror is `notes/capacities-biochem-numbers.md`, and DOIs are in `sources/capacities-biochem-numbers.md`.
+
+> **Capacity panel · stomach acid (ties to §2.2).** Parietal cells secrete ~160 mM HCl (pH ≈ 0.8) (Helander & Keeling 1993). The lumen sits at pH 1–2, while the mucus surface sits at 6–7 (Hunt et al. 2015). Basal output is ♂ 4.0 / ♀ 2.1 mmol H⁺/h and peak output is ♂ 37.4 / ♀ 24.9 mmol/h (Feldman & Barnett 1991). The 24-h total is ~208 mmol (Feldman & Richardson 1986). The empty stomach holds only ~35 mL of water (Mudie et al. 2014).
+
+> **Capacity panel · blood volume (ties to §2.1, §2.2, §2.5).** Blood volume is ♂ 80.3 / ♀ 70.3 mL/kg body mass, but ♂ 105.3 / ♀ 110.9 mL/kg lean mass (Oberholzer et al. 2024). Hematocrit runs ♂ 0.395–0.500 / ♀ 0.348–0.459 (Nordin et al. 2004), so roughly half or more of blood is plasma, the home of the 24 mM bicarbonate buffer. Hemoglobin carries 1.34 mL O₂/g and doubles as the main non-bicarbonate buffer (Boron & Boulpaep 2017).
+
+> **Capacity panel · intratesticular testosterone (ties to §7.3).** Baseline ITT is 822 nmol/L (≈ 237 ng/mL) vs serum 22.8 nmol/L, ≈ 36× (Coviello et al. 2004). A second cohort measured 1174 nmol/L (≈ 339 ng/mL) vs 14.1 nmol/L, ≈ 83× (Coviello et al. 2005). Normal men are summarized at ~100× (Jarow & Zirkin 2005). Testosterone given as a drug cuts ITT by 94–98%.
+
+> **Capacity panel · fertilization zinc spark (ties to §2.3).** A mouse egg holds 6 ± 2 × 10¹⁰ Zn atoms, ~8,000 cortical vesicles of ~10⁶ atoms each. It loses ~20% of its zinc (~10¹⁰ atoms) within 6 h of fertilization, in bursts locked to Ca²⁺ waves (Que et al. 2015; Kim et al. 2011). Human eggs spark too, under parthenogenetic activation; the Zn amplitude tracks the Ca²⁺ amplitude (R² = 0.633) (Duncan et al. 2016). This is measured ion exocytosis, read out by a fluorescent dye.
+
 ---
 
 ## Sources / further reading
 
-Full citations with DOIs are in [`../sources/biology-chemistry-paper1-sources.md`](../sources/biology-chemistry-paper1-sources.md).
+Full citations with DOIs are in [`../sources/biology-chemistry-paper1-sources.md`](../sources/biology-chemistry-paper1-sources.md). Section 7.8 (cortisol / stress axis) sources with DOIs are in [`../sources/stress-axis-cortisol.md`](../sources/stress-axis-cortisol.md).
 
 **Classics**
 - Schrödinger E. (1944). *What Is Life?* Cambridge University Press.
@@ -348,6 +388,63 @@ Full citations with DOIs are in [`../sources/biology-chemistry-paper1-sources.md
 - Reed B.G., Carr B.R. (2018). The normal menstrual cycle and the control of ovulation. In: *Endotext* (MDText.com), updated 5 Aug 2018.
 - Zirkin B.R., Papadopoulos V. (2018). Leydig cells: formation, function, and regulation. *Biol Reprod* 99:101–111.
 - Handelsman D.J. (2026). Androgen physiology, pharmacology, use and misuse. In: *Endotext* (MDText.com), updated 26 Oct 2026.
+
+**Capacities panels (§9.2)**
+- Feldman M., Richardson C.T., Walsh J.H. (1983). Sex-related differences in gastrin release and parietal cell sensitivity to gastrin in healthy human beings. *J Clin Invest* 71:715–720.
+- Feldman M., Richardson C.T. (1986). Total 24-hour gastric acid secretion in patients with duodenal ulcer. *Gastroenterology* 90:540–544.
+- Feldman M., Barnett C.C. (1991). Fasting gastric pH and its relationship to true hypochlorhydria in humans. *Dig Dis Sci* 36:866–869.
+- Helander H.F., Keeling D.J. (1993). Cell biology of gastric acid secretion. *Baillière's Clin Gastroenterol* 7:1–21.
+- Nordin G. et al. (2004). Reference intervals for haemoglobin, basic blood cell counts and erythrocyte indices in the adult Nordic population. *Scand J Clin Lab Invest* 64:385–398.
+- Coviello A.D. et al. (2005). Low-dose human chorionic gonadotropin maintains intratesticular testosterone in normal men with testosterone-induced gonadotropin suppression. *J Clin Endocrinol Metab* 90:2595–2602.
+- Kim A.M. et al. (2010). Zinc availability regulates exit from meiosis in maturing mammalian oocytes. *Nat Chem Biol* 6:674–681.
+- Kim A.M. et al. (2011). Zinc sparks are triggered by fertilization and facilitate cell cycle resumption in mammalian eggs. *ACS Chem Biol* 6:716–723.
+- Mudie D.M. et al. (2014). Quantification of gastrointestinal liquid volumes and distribution following a 240 mL dose of water in the fasted state. *Mol Pharm* 11:3039–3047.
+- Hunt R.H. et al. (2015). The stomach in health and disease. *Gut* 64:1650–1668.
+- Que E.L. et al. (2015). Quantitative mapping of zinc fluxes in the mammalian egg reveals the origin of fertilization-induced zinc sparks. *Nat Chem* 7:130–139.
+- Duncan F.E. et al. (2016). The zinc spark is an inorganic signature of human egg activation. *Sci Rep* 6:24737.
+- Zhang N. et al. (2016). The fertilization-induced zinc spark is a novel biomarker of mouse embryo quality and early development. *Sci Rep* 6:22772.
+- Oberholzer L. et al. (2024). Determinants and reference values for blood volume and total hemoglobin mass in women and men. *Am J Hematol* 99:88–98.
+
+**Stress axis / cortisol (§7.8)** (DOIs in `../sources/stress-axis-cortisol.md`)
+- Reul J.M., de Kloet E.R. (1985). Two receptor systems for corticosterone in rat brain: microdistribution and differential occupation. *Endocrinology* 117:2505–2511.
+- Esteban N.V. et al. (1991). Daily cortisol production rate in man determined by stable isotope dilution/mass spectrometry. *J Clin Endocrinol Metab* 72:39–45.
+- Deuschle M. et al. (1997). With aging in humans the activity of the hypothalamus-pituitary-adrenal system increases and its diurnal amplitude flattens. *Life Sci* 61:2239–2246.
+- Pruessner J.C. et al. (1997). Free cortisol levels after awakening: a reliable biological marker for the assessment of adrenocortical activity. *Life Sci* 61:2539–2549.
+- de Quervain D.J.-F. et al. (2000). Acute cortisone administration impairs retrieval of long-term declarative memory in humans. *Nat Neurosci* 3:313–314.
+- Lewis J.G. et al. (2005). Plasma free cortisol fraction reflects levels of functioning corticosteroid-binding globulin. *Clin Chim Acta* 359:189–194.
+- Debono M. et al. (2009). Modified-release hydrocortisone to provide circadian cortisol profiles. *J Clin Endocrinol Metab* 94:1548–1554.
+- Liston C., McEwen B.S., Casey B.J. (2009). Psychosocial stress reversibly disrupts prefrontal processing and attentional control. *PNAS* 106:912–917.
+- Radley J.J. et al. (2006). Repeated stress induces dendritic spine loss in the rat medial prefrontal cortex. *Cereb Cortex* 16:313–320.
+- Lightman S.L., Conway-Campbell B.L. (2010). The crucial role of pulsatile activity of the HPA axis for continuous dynamic equilibration. *Nat Rev Neurosci* 11:710–718.
+- Perogamvros I., Ray D.W., Trainer P.J. (2012). Regulation of cortisol bioavailability—effects on hormone measurement and action. *Nat Rev Endocrinol* 8:717–727.
+- Stalder T. et al. (2016). Assessment of the cortisol awakening response: expert consensus guidelines. *Psychoneuroendocrinology* 63:414–432.
+- El-Farhan N., Rees D.A., Evans C. (2017). Measuring cortisol in serum, urine and saliva—are our assays good enough? *Ann Clin Biochem* 54:308–322.
+- Roelfsema F. et al. (2017). Impact of age, sex and body mass index on cortisol secretion in 143 healthy adults. *Endocr Connect* 6:500–509.
+- Bianchi L. et al. (2019). Measurement of urinary free cortisol by LC-MS-MS. *J Endocrinol Invest* 42:1299–1305.
+- Choi M.H. (2022). Clinical and technical aspects in free cortisol measurement. *Endocrinol Metab (Seoul)* 37:599–607.
+- Song Y. et al. (2024). Validation of a LC-MS/MS method for establishing reference intervals … of urinary free cortisol and cortisone. *Steroids* 205:109378.
+- *Endotext* (MDText.com) chapters: Nicolaides et al., Adrenal cortex (NBK278945); Angelousi et al., ACTH action on the adrenals (NBK279118); Lim & Khoo, Normal physiology of ACTH and GH release (NBK279116); Babic et al., HPA axis testing protocols (NBK278940).
+
+**Kidney 11β-HSD2 (§7.9)** (DOIs in `../sources/kidney-mr-11b-hsd2.md`)
+- Arriza J.L. et al. (1987). Cloning of human mineralocorticoid receptor complementary DNA. *Science* 237:268–275.
+- Funder J.W., Pearce P.T., Smith R., Smith A.I. (1988). Mineralocorticoid action: target tissue specificity is enzyme, not receptor, mediated. *Science* 242:583–585.
+- Edwards C.R. et al. (1988). Localisation of 11β-hydroxysteroid dehydrogenase—tissue specific protector of the mineralocorticoid receptor. *Lancet* 2:986–989.
+- Albiston A.L. et al. (1994). Cloning and tissue distribution of the human 11β-hydroxysteroid dehydrogenase type 2 enzyme. *Mol Cell Endocrinol* 105:R11–R17.
+- Agarwal A.K. et al. (1994). NAD⁺-dependent isoform of 11β-hydroxysteroid dehydrogenase: cloning from sheep kidney. *J Biol Chem* 269:25959–25962.
+- Krozowski Z. et al. (1995). Immunohistochemical localization of the 11β-HSD type II enzyme in human kidney and placenta. *J Clin Endocrinol Metab* 80:2203–2209.
+- Mune T. et al. (1995). Human hypertension caused by mutations in the kidney isozyme of 11β-hydroxysteroid dehydrogenase. *Nat Genet* 10:394–399.
+- Obeyesekere V.R. et al. (1995). The R337C mutation generates a high Km 11β-HSD type II enzyme. *J Clin Endocrinol Metab* 80:3381–3383.
+- Wilson R.C. et al. (1995). Several homozygous mutations in the gene for 11β-HSD type 2 in patients with apparent mineralocorticoid excess. *J Clin Endocrinol Metab* 80:3145–3150.
+- Brown R.W. et al. (1996). Cloning and production of antisera to human placental 11β-HSD type 2. *Biochem J* 313:1007–1017.
+- Shimojo M. et al. (1997). Immunodetection of 11β-HSD type 2 in human mineralocorticoid target tissues. *Endocrinology* 138:1305–1311.
+- Bostanjoglo M. et al. (1998). 11β-HSD, mineralocorticoid receptor, and thiazide-sensitive Na-Cl cotransporter expression by distal tubules. *J Am Soc Nephrol* 9:1347–1358.
+- Kotelevtsev Y. et al. (1999). Hypertension in mice lacking 11β-hydroxysteroid dehydrogenase type 2. *J Clin Invest* 103:683–689.
+- Palermo M. et al. (2001). Congenital deficiency of 11β-HSD (AME syndrome): diagnostic value of urinary free cortisol and cortisone. *J Endocrinol Invest* 24:17–23.
+- Kataoka S. et al. (2002). 11β-HSD type 2 is expressed in the human kidney glomerulus. *J Clin Endocrinol Metab* 87:877–882.
+- Odermatt A., Kratschmar D.V. (2012). Tissue-specific modulation of mineralocorticoid receptor function by 11β-HSDs: an overview. *Mol Cell Endocrinol* 350:168–186.
+- Chapman K., Holmes M., Seckl J. (2013). 11β-hydroxysteroid dehydrogenases: intracellular gate-keepers of tissue glucocorticoid action. *Physiol Rev* 93:1139–1206.
+- Funder J.W. (2017). Aldosterone and mineralocorticoid receptors—physiology and pathophysiology. *Int J Mol Sci* 18:1032.
+- Cross-cited from §7.8: Choi 2022; Song et al. 2024.
 
 **Textbooks & number books**
 - Boron W.F., Boulpaep E.L. (2017). *Medical Physiology*, 3rd ed. Elsevier.

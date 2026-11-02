@@ -17,7 +17,7 @@
 
 ---
 
-**Part I — Connection receptors** (§1–6) · **Part II — Sex-steroid and reproductive receptors** (§7–11) · **Part III — Open edges and sources** (§12–13)
+**Part I — Connection receptors** (§1–6) · **Part II — Sex-steroid and reproductive receptors** (§7–11) · **Part III — Open edges and sources** (§12–13) · **Addendum — stress receptors MR/GR** (§14)
 
 ## 1. Opening — the conversation at the membrane
 
@@ -440,6 +440,29 @@ This is where it's easy to say too much. Here is what the evidence supports:
 52. Zubieta JK, Smith YR, Bueller JA, et al. (2002). µ-Opioid receptor-mediated antinociceptive responses differ in men and women. *Journal of Neuroscience* 22(12):5100–5107. PMID 12077205.
 
 *Optional motion figure:* `../figures/receptors/receptors-oxtr-path.gif` — a looping knock → Gq → Ca²⁺ pulse.
+
+---
+
+## 14. Addendum: stress receptors MR and GR (cortisol)
+
+*Added 2026-11-02. This section is lean on purpose. The chemistry and every number belong to BioChem's cortisol pack (`notes/stress-axis-cortisol.md`, white paper 01 §7.8), and the brain effects belong to Mind (`library/mind/cortisol-brain-effects.md`). Sources: `sources/receptors-sources.md` §F.*
+
+Connection runs on stress, too. When the stress axis fires, the adrenal releases **cortisol** (corticosterone in rodents), and the brain reads it with two nuclear receptors from the same family as AR and PR (§7):
+
+- **MR (`NR3C2`), the pilot light.** **RAT:** it binds corticosterone very tightly (Kd ≈ 0.5 nM), sits mainly in the hippocampus and lateral septum, and is about **90%** occupied even at the daily trough (Reul & de Kloet, 1985). Card: `library/receptors/mr.md`.
+- **GR (`NR3C1`), the alarm bell.** **RAT:** it binds 6–10× more weakly (Kd ≈ 2.5–5 nM), spreads more widely through the brain (PVN included), and fills at the diurnal peak or under stress (Reul & de Kloet, 1985). Card: `library/receptors/gr.md`.
+- **The switch.** Together the pair acts as a "binary" master switch for neuronal and network adaptation (de Kloet, Joëls & Holsboer, 2005, review).
+
+Where it shows up on the map: `brain.hippocampus` (confirmed hotspot; stress-timed memory retrieval, **RAT** and **HUMAN**), `brain.pfc` (stress → control, **RAT** and **HUMAN**), `brain.pvn`, and the source at `abdomen.adrenal`. Panel copy: `body-map/overlays/receptors-stress-axis-panel.md`.
+
+### 14.1 Kidney periphery: same lock, different doorman
+
+MR binds aldosterone and cortisol with equal affinity (**RAT** + recombinant, Funder et al. 1988; **HUMAN** recombinant, Hellal-Levy et al. 2000). In the distal nephron, the enzyme **11β-HSD2** (`HSD11B2`) turns cortisol into cortisone first (Km for cortisol 47 nM, **HUMAN** recombinant; Albiston et al. 1994; location **HUMAN**, Krozowski et al. 1995), so kidney MR hears aldosterone. When the gate fails, cortisol acts like aldosterone (AME, **HUMAN**; Mune et al. 1995). Cards: `library/receptors/mr-kidney.md` · `library/receptors/hsd11b2.md`. Sources: `sources/receptors-kidney-mr-hsd11b2.md`. Map: `abdomen.kidney` (pending Whole Body confirm).
+
+**Open edge.** Human MR/GR Kd, occupancy and brain density, and cortisol levels inside human hippocampus or PFC are **UNSOURCED**. Every *brain* affinity number above is from rats. For the kidney, native human tissue Kd, MR density, measured occupancy and intrarenal steroid levels remain **UNSOURCED**; the human Kd/Km values in §14.1 are from recombinant protein.
+
+*Figures:* none yet. A two-lock "pilot light vs alarm bell" occupancy sketch is a candidate for `figures/receptors/`, but it must use the RAT numbers only.
+
 
 ---
 **License:** MIT — © 2026 Corpus Nova contributors. See `/LICENSE`. Third-party atlas meshes retain their own licenses.
