@@ -17,4 +17,4 @@
 
 **Key sources:** Kuiper et al. 1996 · Hewitt & Korach 2018
 
-**See also:** `esr1.md` · `gper1.md` · `ar.md`
+**See also:** `esr1.md` · `gper1.md` · `ar.md` · **soy/equol affinity specialty:** [`esr2-equol.md`](esr2-equol.md) (genistein/daidzein/equol preference at ERβ, IN-VITRO) · isoflavones stub: [`../hormones/isoflavones-phytoestrogens.md`](../hormones/isoflavones-phytoestrogens.md)

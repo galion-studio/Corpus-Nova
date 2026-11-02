@@ -39,12 +39,13 @@ The beginning of life is an **open question** our civilization cannot yet answer
 
 Full thesis: [`notes/foundations/BEGINNING-OF-LIFE.md`](notes/foundations/BEGINNING-OF-LIFE.md)
 
-## Current white-paper stream
+## White Paper #1 (current stream)
 
-Evidence-first paper in flight on soy phytoestrogens and exogenous estrogens/androgens in the human body (Poland-focused; East Asian dietary vs pharmacological contrast; historical documented-vs-legend; dual-sex mirror):
+**Corpus Nova’s first white paper** — evidence-first draft on soy phytoestrogens and exogenous estrogens/androgens in the human body (Poland-focused; East Asian dietary vs pharmacological contrast; historical documented-vs-legend; dual-sex mirror):
 
+- Designation: **White Paper #1** of Corpus Nova
 - Pointer: [`notes/foundations/CURRENT-WORK.md`](notes/foundations/CURRENT-WORK.md)
-- Draft path: [`white-papers/soy-estrogen-male-exogenous.md`](white-papers/soy-estrogen-male-exogenous.md)
+- Draft: [`white-papers/soy-estrogen-male-exogenous.md`](white-papers/soy-estrogen-male-exogenous.md)
 
 ## Voice
 
