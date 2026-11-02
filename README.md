@@ -33,6 +33,19 @@ Give everyone free, accurate, beautiful access to how the human body works — n
 - **Real value to humanity:** education, curiosity, clinical literacy, research scaffolding, and a shared public map of the organism we all live inside.
 - Prefer existing open atlases (meshes/viewers) over reinventing them; add what they lack.
 
+## Philosophical foundation
+
+The beginning of life is an **open question** our civilization cannot yet answer — we do not yet have the question that would give us the answer. That open question is built into the primary foundations of this biology/chemistry program.
+
+Full thesis: [`notes/foundations/BEGINNING-OF-LIFE.md`](notes/foundations/BEGINNING-OF-LIFE.md)
+
+## Current white-paper stream
+
+Evidence-first paper in flight on soy phytoestrogens and exogenous estrogens/androgens in the human body (Poland-focused; East Asian dietary vs pharmacological contrast; historical documented-vs-legend; dual-sex mirror):
+
+- Pointer: [`notes/foundations/CURRENT-WORK.md`](notes/foundations/CURRENT-WORK.md)
+- Draft path: [`white-papers/soy-estrogen-male-exogenous.md`](white-papers/soy-estrogen-male-exogenous.md)
+
 ## Voice
 
 PhD-worthy depth · universal readers · abstract, easy, fun, simple — **alien-technology** premium: precise, specific, non-boring, unlike textbook prose.
