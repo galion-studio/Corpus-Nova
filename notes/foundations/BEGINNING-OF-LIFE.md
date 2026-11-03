@@ -22,11 +22,11 @@ That honesty is not a gap to paper over. It is a **primary foundation** of biolo
 3. **Open questions stay visible.** Developmental biology, abiogenesis, first cells, and the jump from chemistry to organism remain marked as open where they are open — including the possibility that the right question has not been asked yet.
 4. **Humility is operational.** White papers and map layers teach what is measured. They do not smuggle a fake origin story into the foundations.
 
-## Relation to work in flight
+## Relation to White Paper #1
 
-Current evidence-first work on exogenous sex steroids (dietary phytoestrogens, pharmacological estrogens and androgens, developmental windows, historical fact vs legend) sits *inside* this foundation: it asks how chemicals shape an already-living human body — not how life began.
+**Corpus Nova White Paper #1** — *Soy, Estrogen and Exogenous Sex Steroids* (`white-papers/soy-estrogen-male-exogenous.md`) — is the program’s first white paper. Its evidence-first work on exogenous sex steroids (dietary phytoestrogens, pharmacological estrogens and androgens, developmental windows, historical fact vs legend) sits *inside* this foundation: it asks how chemicals shape an already-living human body — not how life began.
 
-Pointer: [`../CURRENT-WORK.md`](CURRENT-WORK.md) · white paper path (in flight): [`../../white-papers/soy-estrogen-male-exogenous.md`](../../white-papers/soy-estrogen-male-exogenous.md)
+Pointer: [`CURRENT-WORK.md`](CURRENT-WORK.md) · White Paper #1 (in flight): [`../../white-papers/soy-estrogen-male-exogenous.md`](../../white-papers/soy-estrogen-male-exogenous.md)
 
 ## License
 

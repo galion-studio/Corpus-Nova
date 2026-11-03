@@ -21,6 +21,7 @@
 | [ar.md](ar.md) | Androgen receptor (`AR`, NR3C4) | nuclear + fast non-genomic | testosterone/DHT lock, in both sexes | full |
 | [esr1.md](esr1.md) | Estrogen receptor α (`ESR1`) | nuclear | main estrogen lock; also vital in males | full |
 | [esr2.md](esr2.md) | Estrogen receptor β (`ESR2`) | nuclear | ovary & prostate fine-tuner | full |
+| [esr2-equol.md](esr2-equol.md) | Estrogen receptor β (`ESR2`, NR3A2) × soy isoflavones | nuclear | specialty: equol/isoflavone affinity & ERβ preference (IN-VITRO; HUMAN equol-producer frequency) | full |
 | [gper1.md](gper1.md) | G-protein estrogen receptor (`GPER1`/GPR30) | GPCR | fast estrogen signals | full |
 | [pgr.md](pgr.md) | Progesterone receptor (`PGR`; PR-A/PR-B) | nuclear | "get ready, stay calm" | full |
 

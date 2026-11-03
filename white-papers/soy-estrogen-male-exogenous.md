@@ -4,10 +4,10 @@
 
 What reaches the receptor in a Polish male body from birth to age 25 (soy on the plate, estradiol in creams and patches, estrogens from history), with a parallel look at what exogenous androgens do to a female body.
 
-*White paper · Sex biology (cross-cuts Themes 1 / 3 / 6) · Draft 1 (2026-11-02)*
+*Corpus Nova **White Paper #1** · Sex biology (cross-cuts Themes 1 / 3 / 6) · Draft 1 (2026-11-02)*
 
 ---
-**Corpus Nova** · Theme Sex Biology · Universal readers · PhD-worthy depth · Voice: alien-technology minimal · **License:** MIT · 2026-11-02
+**Corpus Nova** · **White Paper #1** · Theme Sex Biology · Universal readers · PhD-worthy depth · Voice: alien-technology minimal · **License:** MIT · 2026-11-02
 ---
 
 **Feeds:**
@@ -15,6 +15,7 @@ What reaches the receptor in a Polish male body from birth to age 25 (soy on the
 - `body-map/overlays/soy-estrogen-male-panel.md` (planned)
 - `library/hormones/isoflavones-phytoestrogens.md`
 - `library/receptors/esr2-equol.md` (ERβ × isoflavones/equol; Receptors)
+- `library/hormones/male-aromatase-cyp19.md` (CYP19 / male E2 origin; BioChem)
 
 **Research and sources:**
 - `notes/soy-estrogen-male-research.md`
@@ -189,7 +190,7 @@ Any strong estrogen entering from outside will therefore lower LH and, with it, 
   - In a man who could not make estrogen (aromatase deficiency), bone age was 14 years at age 24, with striking osteopenia (Morishima et al. 1995, PMID 8530621).
   - A 28-year-old man with a disrupted estrogen-receptor gene was **204 cm** tall with incomplete epiphyseal closure and was still growing (Smith et al. 1994, PMID 8090165).
   - **HUMAN-CASE**. Male bone maturation needs estrogen (review: Rochira et al. 2005, PMID 15685347).
-- The share of a man's circulating estradiol made by peripheral aromatization, as opposed to direct testicular secretion, is not given as a number here: **UNSOURCED**.
+- **Where a man's estradiol comes from (BioChem pointer).** Tracer studies put male E2 production at about **44 µg/day**. At most 12 µg of that is secreted directly by the testis, so **at least ~73% is made outside it** by aromatase (CYP19A1) in muscle, fat, bone and brain (derived from MacDonald et al. 1979, PMID 511978; review figure ~20% directly from testes, de Ronde & de Jong 2011, PMID 21693046). Most of that peripheral E2 is still built from testicular testosterone: about 60% of circulating E2 depends on the testis (de Ronde 2011; de Ronde et al. 2005, PMID 15745935). This "origin share" is a different number from the ~0.2–0.4% of testosterone output that becomes E2 (Longcope et al. 1969, PMID 5355335). **HUMAN** · Numbers and tags → [`../notes/male-aromatase-cyp19.md`](../notes/male-aromatase-cyp19.md) §3–4. The textbook "85%" figure remains **UNSOURCED**.
 
 ### 4.2 Hormones: the meta-analytic answer
 
@@ -652,7 +653,7 @@ This paper is a content source for the **Corpus Nova body map**. It does not shi
 2. **East Asian children.** mg/day soy intake by age: **UNSOURCED**.
 3. **Long semen trials.** No soy trial runs longer than about three months.
 4. **Female mirror sizes.** Breast volume (mL), clitoral size (mm), adult jaw bone, thyroid cartilage: **UNSOURCED**. Uterine and ovarian volume results conflict.
-5. **History.** Yang-sheng feminization, Japanese elixirs, soy-for-libido traditions, Qin Shi Huang's cause of death: **UNSOURCED**. The share of male estradiol that comes from peripheral aromatization: **UNSOURCED**. The qiu shi replication literature needs full citations.
+5. **History.** Yang-sheng feminization, Japanese elixirs, soy-for-libido traditions, Qin Shi Huang's cause of death: **UNSOURCED**. The qiu shi replication literature needs full citations. Male peripheral-aromatization share of E2: now sourced via BioChem [`notes/male-aromatase-cyp19.md`](../notes/male-aromatase-cyp19.md) (§4.1a); textbook "85%" stays **UNSOURCED**.
 6. **Not yet verified, so not cited:** EFSA BPA TDI value; NTP-CERHR 2010 soy-formula monograph; FDA Evamist notice; licorice and testosterone; Senofonte 2019 venue.
 
 ---
@@ -660,6 +661,13 @@ This paper is a content source for the **Corpus Nova body map**. It does not shi
 ## Sources
 
 Full list with evidence tags: `sources/soy-estrogen-male.md` (118 entries; 100–118 were added in the merge, section L). All PMIDs were checked against PubMed on 2026-11-02.
+
+**Male aromatase / E2 origin (BioChem)**
+- Full note: `notes/male-aromatase-cyp19.md` · sources: `sources/male-aromatase-cyp19.md` · card: `library/hormones/male-aromatase-cyp19.md`
+- MacDonald PC et al. (1979). *J Clin Endocrinol Metab* 49:905–910. PMID 511978.
+- de Ronde W, de Jong FH (2011). *Asian J Androl* 13:187–192. PMID 21693046.
+- de Ronde W et al. (2005). *J Clin Endocrinol Metab* 90:2563–2569. PMID 15745935.
+- Longcope C et al. (1969). *J Clin Invest* 48:2191–2201. PMID 5355335.
 
 **Receptor chemistry and equol**
 - Kuiper GG et al. (1997). *Endocrinology* 138:863–870. PMID 9048584.

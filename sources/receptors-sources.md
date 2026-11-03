@@ -1,6 +1,6 @@
 # Receptors theme — sources
 
-**Theme:** 3 · Receptors · **Used by:** `white-papers/receptors-human-connections.md` (§13), `library/receptors/*.md`, `body-map/overlays/receptors-overlays.json`, `body-map/overlays/receptors-sex-hormones-panel.md`.
+**Theme:** 3 · Receptors · **Used by:** `white-papers/receptors-human-connections.md` (§13), `library/receptors/*.md` (incl. `esr2-equol.md` via §H), `body-map/overlays/receptors-overlays.json`, `body-map/overlays/receptors-sex-hormones-panel.md`.
 
 **Verification note (2026-11-01):** Every entry was checked by web search. The 22 sex-biology entries added in this round (groups A–D except Dumais & Veenema, which was verified earlier) were confirmed against PubMed records; authors, year, journal, volume, issue, pages and PMID match. No citation was invented. If a claim can't be traced to one of these, it shouldn't appear on the map.
 
@@ -72,6 +72,14 @@
 - Walum H, Westberg L, Henningsson S, et al. (2008). Genetic variation in the vasopressin receptor 1a gene (AVPR1A) associates with pair-bonding behavior in humans. *PNAS* 105:14153–14156.
 - Way BM, Taylor SE, Eisenberger NI (2009). Variation in the µ-opioid receptor gene (OPRM1) is associated with dispositional and neural sensitivity to social rejection. *PNAS* 106:15079–15084.
 - Young LJ, Wang Z (2004). The neurobiology of pair bonding. *Nature Neuroscience* 7:1048–1054.
+
+## H. ERβ × soy isoflavones / equol (affinity only) — card esr2-equol
+
+Pointer, not a duplicate bibliography. Full entries with evidence tags live in [`soy-estrogen-male.md`](soy-estrogen-male.md) §A (entries 1–4); Reed 2021 (context only) is §B entry 6.
+- Kuiper et al. 1997, PMID 9048584, doi:10.1210/endo.138.3.4979 (**IN-VITRO**; E2 Kd ERα vs ERβ; genistein prefers ERβ)
+- Kuiper et al. 1998, PMID 9751507, doi:10.1210/endo.139.10.6216 (**IN-VITRO**; ERβ potency order; 1–10 nM transcription threshold)
+- Setchell et al. 2002, PMID 12468591; Setchell & Clerici 2010, PMID 20519412 (**REVIEW**; S-(−)-equol prefers ERβ; producer frequency, HUMAN)
+- Kuiper et al. 1996 (cloning) is already listed in §A above.
 
 ## Atlas sources (not cited in prose)
 
