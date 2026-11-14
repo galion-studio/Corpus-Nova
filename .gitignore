@@ -37,3 +37,22 @@ hosts.yml
 
 # Stray nested clones of this repo
 /Corpus-Nova/
+
+# G.A.L.I.O.N. hygiene: secrets, audio, models, build output, OS junk
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.onnx
+*.safetensors
+*.pt
+*.ckpt
+*.gguf
+node_modules/
+dist/
+build/
+target/
+__pycache__/
+*.pyc
+*.log
